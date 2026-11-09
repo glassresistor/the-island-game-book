@@ -31,11 +31,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      # reader-beware is the sibling package that builds this gamebook.
+      # reader-beware is the package that builds this gamebook. It's not a
+      # dependency of this repo and isn't on PyPI, so install it straight from
+      # its git repo (a sibling folder only exists locally, not in CI).
       - name: Install reader-beware
         run: |
           python -m pip install --upgrade pip
-          python -m pip install ../reader-beware
+          python -m pip install git+https://github.com/glassresistor/reader-beware.git@main
 
       - name: Validate narrative structure (links, reachability, dead ends)
         run: beware check --narrative-path narrative.yaml
@@ -86,7 +88,7 @@ jobs:
       - name: Install reader-beware
         run: |
           python -m pip install --upgrade pip
-          python -m pip install ../reader-beware
+          python -m pip install git+https://github.com/glassresistor/reader-beware.git@main
 
       # Calibre provides ebook-convert (used by `beware build-mobi`). Without
       # it, the builder still emits a Kindle-ready .epub as a fallback.
