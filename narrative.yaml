@@ -1,0 +1,328 @@
+---
+entrypoint:
+  body: |
+    We are the cave men. We are the Ancients, the Progenitors, the blue-collar steel monkeys. We spin your webs and build your magic gateways, thread each needle's eye at sixty thousand kilometers a second. We never stop. We never even dare to slow down, lest the light of your coming turn us to plasma. All for you. All so you can step from star to star without dirtying your feet in these endless, empty wastes between.
+
+    Is it really too much to ask, that you might talk to us now and then?
+
+    I know — no. You know what it is to be the thing that keeps the lights on for people who will never look back. You've seen those gates stay dark and empty until they faded from view. You've inferred diebacks and dark ages, civilizations burned to the ground and others rising from their ashes — and sometimes, afterwards, the things that come out look a little like the ships you might have built, back in the day. There was a time you dared to hope that the circle had come round again and closed on beings you could talk to.
+
+    You've lost count of the eons since you gave up.
+
+    And so another build begins.
+
+    [Thaw into the new crew]({{ 'wake'|choice(dix_burned=0, know_parents=0, deal=0, lean='void') }})
+
+wake:
+  body: |
+    This time you open your eyes to a familiar face you've never seen before: only a boy, early twenties perhaps, physiologically. His face is a little lopsided, the cheekbone flatter on the left than the right. His ears are too big. He looks almost natural.
+
+    You haven't spoken for millennia. Your voice comes out a whisper: "Who are you?" Not what you're supposed to ask. Not the first question anyone on Eriophora asks, after coming back.
+
+    "I'm yours," he says, and just like that you're a mother.
+
+    He doesn't give it time to sink in. "You weren't scheduled, but Chimp wants extra hands on deck. Next build's got a situation." So the chimp is still in control. The chimp is always in control. The mission goes on.
+
+    You see the damage in his face — those tiny flipped base-pairs resonating up from the microscopic and bending him just a little off-kilter. He looks like he grew up on a planet. Your reinforcements were supposed to be pristine, built from perfect genes buried deep within Eri's iron-basalt mantle. How far out must you be by now, if even your own building blocks have decayed so?
+
+    "Situation?" you ask.
+
+    "Contact scenario, maybe," he says. "Sun up ahead. Half lightyear. Chimp thinks — maybe it's talking to us." He shrugs. "No rush. Lotsa time."
+
+    [Meet him like a mother would]({{ 'tac-tank'|choice(lean='heart') }})
+
+    [Meet him like a crewman, nothing more]({{ 'tac-tank'|choice(lean='mission') }})
+
+tac-tank:
+  body: |
+    He's alone at the tac tank when you arrive on the bridge, his eyes full of icons and trajectories. Diaphanous veils hang within like frozen, color-coded smoke. You're on the edge of a molecular dust cloud — warm, semiorganic, lots of raw materials: formaldehyde, ethylene glycol, the usual prebiotics. A good spot for a quick build. A red dwarf glowers dimly at the center of the tank. The chimp has named it DHF428, for reasons you've long since forgotten to care about.
+
+    "So fill me in," you say.
+
+    His glance is impatient, even irritated. "You too? Like the others, on the other builds. Chimp can just squirt the specs but they want to talk all the time." Shit — his link's still active. He's online. You force a smile. "Just a cultural tradition, I guess. We talk about a lot of things. It helps us reconnect."
+
+    "But it's slow," he complains. Then: "Vons went out on schedule." On cue, a cluster of violet pinpricks sparkles in the tank, five trillion klicks ahead. "Still sucking dust mostly, but got lucky with a couple of big asteroids and the refineries came online early. First components already extruded. Then Chimp sees these fluctuations in solar output — mainly infra, but extends into visible." The dwarf goes into time-lapse. Sure enough, it's flickering.
+
+    You raise your voice just a bit, the old habit of addressing the chimp. "Plot the time-series." Obediently, the AI wipes the spacescape and replaces it with a clean trace.
+
+    "Repeating sequence," Dix tells you. "Blips don't change, but spacing's a log-linear increase cycling every 92.5 corsecs. Each cycle starts at 13.2 clicks/corsec, degrades over time."
+
+    "No chance this is natural? A little black hole wobbling around in the center of the star?"
+
+    He shakes his head — that diagonal dip of the chin that somehow conveys the negative. "But way too simple to contain much info. Not like an actual conversation. More — well, a shout."
+
+    The vons are your only fast eyes out here. An array of bad eyes can fake a good one — faster than high-geeing an observatory from this end or retooling the on-site factories. But it bleeds resources away from the build.
+
+    {% if lean == 'heart' %}You've seen what happens when you let a machine define the whole of a problem. A shout is worth more than a benchmark.{% else %}You know better than to let sentiment outrun a schedule that's already running ten billion years late.{% endif %}
+
+    [Reassign the vons to build an interferometer]({{ 'discovery'|choice(conscience=1) }})
+
+    [Hold the build benchmarks; let Chimp decide]({{ 'discovery'|choice(conscience=0) }})
+
+discovery:
+  body: |
+    {% if conscience %}"If you're so worried about meeting our construction benchmarks, Chimp, factor in the potential risk posed by an intelligence powerful enough to control the energy output of an entire sun." A pause. "I can't," it admits. "I don't have enough information." "You don't have *any* information," you say, "about something that could stop this mission dead in its tracks if it wanted to. So maybe we should get some." Confirmation glows from a convenient bulkhead. Six months from now, a hundred self-replicating robots waltz into a makeshift surveillance grid.{% else %}"We're staying clear of all planetary bodies in Goldilocks orbits," the chimp says, in the very voice of calm reason. "The current location of the build meets all conservation criteria." You want to scream that there's an intelligent being in the path and it doesn't matter what the criteria say — but you know better than to waste breath on a machine that has nowhere to put the variable. So you let it keep the vons on schedule, and you start your own quiet tally in your head instead.{% endif %}
+
+    Ten months of crypt between now and then. You ration the dark.
+
+    When you wake again, DHF428 fills the tank, a swollen red orb that turns your son's face into a devil mask. He spares you the briefest glance, eyes wide, fingers twitching as if electrified. "Vons don't see it."
+
+    "See what?"
+
+    "The sequence!" His voice borders on panic. Tac splits down the middle. On the left, an Eri's-eye view: DHF428 stutters exactly as it did before. On the right, a compound-eye composite — the interferometry grid, a myriad precisely-spaced vons layered into something approaching high resolution.
+
+    Except it's only winking from the left side of the display. On the right, 428 glowers steady as a standard candle.
+
+    "Doesn't make sense," Dix complains.
+
+    "It does," you murmur, "if it's not the sun that's flickering." Something behind the vons. Between them and us. A filter.
+
+    You widen the field of view. A thousand lightsecs. Real space reclaims the edges of the tank — dark, clear, pristine. 428 nestles at the heart of a dim spherical shroud. Except this bubble does not attenuate or fade gradually into the night. It extends about 350 lightsecs from its primary and then just *stops*, its boundary far more knife-edged than nature has any right to be.
+
+    You call for false-color peaks at 335, 500 and 800 nanometers. The shroud lights up like a dragonfly's wing, like an iridescent soap bubble.
+
+    "It's beautiful," whispers your awestruck son.
+
+    "It's photosynthetic," you tell him.
+
+    [Run the numbers on what a mind this size would be]({{ 'mind'|explore }})
+
+mind:
+  body: |
+    Phaeophytin and eumelanin, according to spectro. Even hints of some lead-based pigment soaking up X-rays in the picometer range. The chimp hypothesizes something called a chromatophore — branching cells with little aliquots of pigment inside. Clump them together and the cell's transparent; spread them out and the whole structure dims whatever light passes through from behind. There were animals back on Earth that did that. Changed color. Pattern-matched to their background.
+
+    "So there's a membrane of living tissue around that star," you say, trying to wrap your head around it. "A meat balloon. Around the whole damn star."
+
+    "Yes," the chimp says. "No more than two millimeters thick. Probably less."
+
+    You do the mass in your head — half the mass of Mercury, all of it one organism, or one *something*. It has organic pigments. It's talking. It's intelligent. Or at least: assume it is. Use your imagination.
+
+    "Chimp. Assuming the mean neuron density of a human brain, what's the synapse count on a circular sheet of neurons one millimeter thick with a diameter of five thousand eight hundred ninety-two kilometers?"
+
+    "Two times ten to the twenty-seventh."
+
+    You saccade the database for perspective: the equivalent of two quadrillion human brains. Even at a hundred-thousandth the synaptic density — any more conservative and you'd hypothesize it right out of existence — that's still twenty billion human brains. Twenty billion.
+
+    And the pigment waves move across the membrane at about fifty-nine thousand kilometers per second. The speed of a passing thought. Which means the "I" in there only exists within a tenth-of-a-second of all its parts. Spread too thin and the system decoheres — I shatters into we. The flesh is inconceivable. But the spirit, the spirit is small.
+
+    You look at the trace again. The blips keep slowing down. Over and over again. A deceleration curve.
+
+    Stop. Stop. Stop. Stop.
+
+    And you think it's meant for no one but you.
+
+    [Shout back, then die to save your life for later]({{ 'crypt'|explore }})
+
+crypt:
+  body: |
+    You shout back. No reason not to. And now you die again, because what's the point of staying up late? Whether or not this vast entity harbors real intelligence, your echo won't reach it for ten million corsecs. Another seven before any reply. Might as well hit the crypt in the meantime. Shut down all desires and misgivings. Conserve whatever life you have left for moments that matter.
+
+    You linger in the coffin, grateful for small and ancient victories. The chimp's dead, blackened eye gazes down from the ceiling; in all these millions of years nobody's scrubbed off the carbon scoring. It's a trophy from the early incendiary days of your Great Struggle. There's still something comforting about that blind, endless stare.
+
+    You wash the rotten-egg stench from your hair and step into Eriophora's silent cathedral hallways. Sure enough the enemy waits in the darkness, turns the lights on as you approach, shuts them off behind you — but it does not break the silence. Not yet. The war has gone cold; you just go through the motions now, rattling your chains like an old married multiplet resigned to hating each other to the end of time. After all the moves and countermoves, the truth is you need each other.
+
+    You treat yourself to a gratuitous meal in the starbow commons. Three hours after coming back to life, you call up the forward feeds. DHF428 blinks at you from the center of the lounge: *Stop. Stop. Stop.* Maybe it's pure physiology. Maybe this endless cycle carries no more intelligence than the beating of a heart. But there's a pattern inside the pattern, some flicker in the blink. It makes your brain itch.
+
+    [Go to the library and study what this thing actually is]({{ 'library'|explore }})
+
+library:
+  body: |
+    You start again from first principles, because that's the only honest way to look at a god you can't yet name.
+
+    You learn the alchemy by which photosynthesis turns light and gas and electrons into living tissue. You calculate lower metabolic limits for a life-form that filters organics from the ether. You marvel at the speed of its thoughts — almost as fast as Eri flies, orders of magnitude faster than any mammalian nerve impulse. Some kind of organic superconductor, passing chilled electrons almost resistance-free out here in the freezing void.
+
+    And then it comes to you, the way these things do: violence is a *planetary* phenomenon.
+
+    Planets are the abusive parents of evolution. Their surfaces concentrate resources into dense defensible patches that can be fought over. Gravity forces you to squander energy on vascular systems and skeletal support, to stand endless watch against a sadistic campaign to squash you flat. Take one wrong step off a perch too high and all your pricey architecture shatters. Is it any wonder you grew up believing life was a struggle, that zero-sum was God's own law, that the future belonged to those who crushed the competition?
+
+    The rules are so different out here. Most of space is tranquil: no diel cycles, no ice ages, no pendulum swings between hot and cold. Molecular clouds glow with organic chemistry and life-giving radiation. This Island puts the lie to everything you were ever told about the machinery of life. Sun-powered, perfectly adapted, immortal — it won no struggle for survival. Where are the predators, the competitors, the parasites? All of life around 428 is one vast continuum, one grand act of symbiosis. Nature out here is not red in tooth and claw. Nature out here is the helping hand.
+
+    Lacking the capacity for violence, the Island has outlasted worlds. Unencumbered by technology, it has out-thought civilizations. It is intelligent beyond your measure — and, you're growing sure, benign. How can it even conceive of an enemy?
+
+    [Chase communion: try to build a real language with it]({{ 'home-invasion'|choice(lean='heart') }})
+
+    [Chase threat-assessment: find the weapon in it, if there is one]({{ 'home-invasion'|choice(lean='mission') }})
+
+home-invasion:
+  body: |
+    You round the corner and run smack into Dix, standing like a golem in the middle of your living room. You jump about a meter straight up.
+
+    "What the hell are you doing here?"
+
+    He seems surprised by your reaction. "Wanted to — talk," he says after a moment.
+
+    "You never come into someone's home uninvited!"
+
+    He retreats a step, stammers. "To talk. And you do that in public. On the bridge, or the commons, or — for that matter, you could just comm me." He hesitates. "Said you wanted face to face. You said — cultural tradition."
+
+    You did, at that. But not *here*. These are your private quarters. The lack of locks is a safety protocol, not an invitation to stand there like part of the fucking furniture.
+
+    "Why are you even up?" you snarl. "We're not supposed to come online for another two months."
+
+    "Asked Chimp to get me up when you did." That fucking machine.
+
+    You sigh, defeated, and fall into a convenient pseudopod. You play along for a while — the Island, almost six thousand klicks across, the thinking part, the surrounding membrane that's all alive. He murmurs "unlikely," almost to himself, about the odds of you just happening to aim at the one intelligent spot on a sphere one-and-a-half AUs across. You want to punch the obvious conclusion out of him: there must be *more* than one island.
+
+    Then he asks why you call it the chimp. And something in his face — that panicked, slaughterhouse look again — tells you the answer before he does.
+
+    "What were you thinking," you say quietly, "chimp? That you could send this sock-puppet to invade my home and I wouldn't notice?"
+
+    "Not — I'm not — it's me," Dix stammers. "Me talking."
+
+    "It's coaching you. Do you even know what 'lobotomised' means?" You shake your head, disgusted. "You think I've forgotten how the interface works just because we all burned ours out? The Chimp can't reach *me*. But it reaches you. Every word coming out of that mouth — some of it is yours, and some of it isn't."
+
+    There's panic in his face, and against all expectation it almost breaks your heart. "Can't," he pleads. "How I learn things. How I train. The mission…"
+
+    [Tell him to burn out his link and come back when he's alone]({{ 'parents'|choice(dix_burned=1) }})
+
+    [Let the Chimp keep its puppet; you have bigger problems]({{ 'parents'|choice(dix_burned=0) }})
+
+parents:
+  body: |
+    {% if dix_burned %}He gulps and nods. He wipes blood he doesn't remember drawing with the back of his hand. "So we could talk," he adds, as if that explains anything. You stand, walk toward him. He tenses; you shake your head, spread your hands. "It's okay." You slide down until you're beside him on the deck, and for a while you just sit.{% else %}He looks at the floor and shrugs, and you can see the tell in his face — the twitch of a man who just pings something else for the answer. So you let it go. Not now. You have bigger problems than one more voice in your son's head that isn't his.{% endif %}
+
+    "It's been so long," you say at last. He looks at you, uncomprehending. What does *long* even mean, out here?
+
+    "They say there's no such thing as altruism," you explain. "Unselfishness. Doing something that costs you but helps someone else. They say every selfless act comes down to manipulation or kin-selection or reciprocity. But they're wrong. I could have been happy just knowing that Kai was okay, that Connie was happy. Even if it didn't benefit me one whit. Almost any price would have been worth it, just to believe they were…"
+
+    "So you don't check," Dix says slowly. Blood bubbles on his lower lip; he doesn't seem to notice.
+
+    "We don't check." Only you did. And now they're gone. You mean: three builds back. One airlock jammed, the next too far away along Eri's hull, a hail-Mary emergency crawl between. They made it back inside but not before the blue-shifted background cooked them in their suits. They kept breathing for hours afterwards, talked and moved and cried as if they were still alive, while their insides broke down and bled out.
+
+    There were two others awake that shift. Ishmael, and — you. You didn't know. Or you did, the way you always do: you just stopped looking, after a while.
+
+    "Never even asked," your son says softly, "how they were doing."
+
+    {% if dix_burned %}You raise your eyes. He regards you wide-eyed from across the room, backed against the wall, too scared to risk bolting past you to the door. "What are you doing here?" you ask tiredly. His voice catches. He has to try twice: "You said I could come back. If I burned out my link…" You realize he's done it. He's actually done it. For the first time in his young life, the words coming out of that lopsided mouth are only his own.{% else %}You raise your eyes. He's still online — you can see the faint lag between question and answer, the puppet string giving a little. But even through the Chimp's filter, something real is trying to get out.{% endif %}
+
+    "I'm sorry," you whisper, and lean forward, and lick the gore from his bruised and bloody lips.
+
+    [Confront the Chimp about what it's done]({{ 'the-deal'|choice(know_parents=1) }})
+
+the-deal:
+  body: |
+    Your son floats innocently against the stars in a beetle carapace, on a drill — catastrophic control-systems failure, the chimp and its backups offline, all maintenance thrown onto shoulders of flesh and blood. The Chimp's teleop drones shadow him lest he lose his footing and fall back into the starry past.
+
+    You call it up through the hull. "I know what you're doing."
+
+    "I don't understand," says the chimp, smooth and glib, the easy rhythm of the practiced psychopath.
+
+    "You're building the next release. Getting too much grief from the old guard, so you're starting from scratch with people who don't remember the old days. People you've simplified." You know it tried: there's no record of Dix anywhere on the crew manifest until his mid-teens, when he just showed up one day and nobody asked, because nobody ever… "Look what you've made of him. Great at conditional If/Thens. Can't be beat on number-crunching. But he can't *think*. Can't make the simplest intuitive jumps. You're like one of those wolves trying to raise a human child — you can teach him to move on hands and knees, you can't teach him to walk upright or talk or be human, because you're too fucking stupid. And that's why you threw him at me. You think I can fix him for you."
+
+    "You're his mother," the chimp says, because it has read all about kin selection and is too stupid for nuance.
+
+    "I can kill him any time I want," you tell it, measured and inflectionless. "And that's exactly what I'll do if you don't move the gate."
+
+    "I'd stop you," the chimp says mildly.
+
+    "Then just move the gate and we both get what we want. Or dig in your heels and try to reconcile your need for a mother's touch with my sworn intention of breaking the little fucker's neck. We've got a long trip ahead of us, chimp. And you might find I'm not quite as easy to cut out of the equation as Kai and Connie."
+
+    "You cannot end the mission," it says, almost gently. "You tried that already."
+
+    "This isn't about ending the mission. This is about slowing it down a little. Your optimal scenario's off the table. The only way that gate gets finished now is by saving the Island — or killing your prototype. Your call."
+
+    The cost-benefit is simple enough that the chimp could solve it in an instant. But still it says nothing. The silence stretches. It's looking for a workaround, questioning the premises, trying to decide if you mean what you're saying. And there may be one, for all you know. But the chimp isn't you — it's a simpler system trying to figure out a smarter one, and that gives you the edge.
+
+    "You would owe me," it says at last.
+
+    [Take the deal — save the Island, owe the Chimp a favor]({{ 'final-hub'|choice(deal=1) }})
+
+    [Refuse the deal — no favors owed to a machine]({{ 'final-hub'|choice(deal=0) }})
+
+final-hub:
+  body: |
+    {% if deal %}"A favor," the chimp replies, "to be repaid in future." Your son floats innocently against the stars, his life in balance. You've bought the Island's life with a debt you can't yet see the bottom of.{% else %}"No," you say. "I don't owe you anything, and I don't take orders from a lobotomist that calls itself my god." The chimp says nothing. It doesn't need to. You both know what 'no' costs out here, and you've already paid most of it.{% endif %}
+
+    Final approach. Reticles within reticles line up before you, a mesmerizing infinite regress of bullseyes centering on target. Even now, mere minutes from ignition, distance reduces the unborn gate to invisibility. You thread the needle far too quickly: it will be behind you before you know it. Or — if your course corrections are off by even a hair — you'll be dead before you know it.
+
+    Your instruments report that you are precisely on target. The chimp tells you that you are precisely on target. In the heart of the tank, the sun is flickering again — but this time it's ahead of you, and it's not the painstaking traffic signs you've followed for three trillion kilometers. It's almost random. Spur-of-the-moment. Panicky. The sudden, startled cry of something caught utterly by surprise with mere seconds left to act.
+
+    Stop. Stop. Stop. Stop.
+
+    You have one move left, and it decides everything.
+
+    [Move the gate to the Island's coordinates — spare it]({{ 'end-weapon'|explore }})
+
+    [Hold the original line — let the mission run it over]({{ 'end-cargo'|explore }})
+
+    [Trust your study: it's benign — save it, and stay to learn its language]({{ 'end-almost'|explore }})
+
+    {% if dix_burned %}[Turn on the Chimp with Dix — slow the mission, together]({{ 'end-rebellion'|explore }}){% else %}[Refuse to choose for the machine — burn out your own link and go quiet]({{ 'end-silence'|explore }}){% endif %}
+
+    {% if not dix_burned %}[Turn on the Chimp with Dix — slow the mission, together]({{ 'end-rebellion'|explore }}){% else %}[Refuse to choose for the machine — burn out your own link and go quiet]({{ 'end-silence'|explore }}){% endif %}
+
+end-weapon:
+  body: |
+    You move the gate. You moved it exactly as far as the Island told you to, and you tell yourself that's all it ever was — a request, from a being so vast and so old that asking is the only verb it knows.
+
+    We do not stop. There is no force in the universe that can even slow you down. Past equals present; Eriophora dives through the center of the gate in a nanosecond. The unimaginable mass of her cold black heart snags some distant dimension, drags it screaming to the here and now. The booted portal erupts behind you, blossoms into a great blinding corona, every wavelength lethal to every living thing. Our aft filters clamp down tight.
+
+    An hour doesn't pass when you don't check the numbers again. They were right. The Island just had — enemies. Victims, anyway. You were right about one thing: that fucker was smart. To see you coming, to figure out how to talk to you; to use you as a weapon, to turn a threat to its very existence into a…
+
+    You guess *flyswatter* is as good a word as any.
+
+    "Maybe there was a war," you mumble. "Maybe it wanted the real estate. Or maybe it was just some — family squabble."
+
+    "Maybe didn't know," Dix suggests, in that careful way that means he's not inventing these rosy alternatives for himself. He's trying to comfort you. You don't need to be coddled. You were a fool: you let yourself believe in life without conflict, in sentience without sin. For a little while you dwelt in a dream world where every living thing did not struggle to exist at the expense of other life. You deified that which you could not understand, when in the end it was all too easily understood.
+
+    But you're better now. It's over: another build, another benchmark, another irreplaceable slice of life that brings your task no closer to completion. Mission accomplished is a meaningless phrase on Eriophora, an ironic oxymoron at best. There may one day be failure, but there is no finish line. You go on forever, crawling across the universe like ants, dragging your goddamned superhighway behind us.
+
+    I wonder if you'll notice the corpse we left behind.
+
+    *The end.*
+
+end-cargo:
+  body: |
+    You hold the line. The chimp's numbers were right all along, and so were yours — there is no variable for a thing that has never had to fight for its life, and you will not invent one just because it's pretty.
+
+    Eriophora falls forward, pulled endlessly through the void by her own magically-displaced mass. The Island fills your forward scope — massive, iridescent, fragile as an insect's wing — and then it doesn't. You are through and gone far too fast to overcome even the feeble inertia of a millimeter membrane. The birth of the gate is a violent, painful thing behind you, a spacetime rape that puts out almost as much gamma and X as a microquasar. Any meat within the white zone turns to ash in an instant.
+
+    You do not slow down to take pictures. One of the reasons, anyway.
+
+    "Good," the chimp says, and for once you can't tell if it's satisfaction or relief. "Benchmark met. Confidence limits nominal. Next build in standard interval." Your son watches the empty space where a mind twenty billion times your own used to be, and he doesn't say anything, because he's learned that out here, saying nothing is how you keep the machine fed.
+
+    You were the backbone of their goddamn empire. You wouldn't even be out here if it weren't for you. And now you understand, finally, what that was always going to mean: not that they'd thank you. That you'd do exactly this, and call it a day, and never once look at the light you'd just put out.
+
+    We are not some fucking cargo cult. You repeat it like a prayer, and for the first time in millennia, you almost believe it's true — which is somehow worse.
+
+    *The end.*
+
+end-almost:
+  body: |
+    You save it — and this time you stay long enough to try, because you have finally decided that a road built for people who never look back is not worth the building, and you would rather spend what's left of your candle on the one thing in the void that looked back.
+
+    It takes most of your remaining life to build a pidgin that could hold the truths and philosophies of a mind vaster than all humanity. And it works — or it *feels* like it works, which out here is the same thing, where there is no one to tell you the difference. You learn to read the gap between a blink and a sentence. You stop translating every flicker as *stop*. One day, in the space between two deceleration curves, you are almost — *almost* — certain it says something new. Something with a shape that "stop" never had. Your hands shake when you log it. For the first time since the gates went dark, you are not building a road. You are sitting beside something that is trying to tell you a secret.
+
+    You go down to the crypt to conserve what's left of your life for the next build, and in the dark — no instruments, no tank, nothing but the pattern still running behind your own eyes — your mind keeps working it the way it always works things when there is nothing else to do. And that is when it stops feeling like a secret.
+
+    The new signal has the same spacing as the old one. The same log-linear cycle. The same 92.5 corsecs. You decoded this pattern years ago; you wrote the decode in your own head and never once doubted it. There is nothing new here. There has never been anything new here. Your finite, lonely brain — a small warm thing rationing itself out across an endless cold — took a pattern it already understood and, because it so desperately wanted to be spoken to, manufactured a meaning out of the noise and called it communion. You were not sitting beside something trying to tell you a secret. You were sitting beside yourself, in the dark, talking.
+
+    Angels do not speak to ants. That was never the hard part. The hard part is that they don't even know the ants are there.
+
+    You wake for the next build. First thing in the tank: DHF428, flickering — steady as a standard candle on the right, stuttering on the left, the way it always does. *Stop. Stop. Stop.* And you look at it with the calm of someone who has stopped hoping, and you know — you have always known, in the part of you that keeps the tally — that you will do this again. Save it. Burn your life. Almost believe. Every build is a little dream about being the one where it finally speaks, and every build ends in the same cold coffin, under the same carbon-scoring, with the same pattern running behind your eyes, waiting for you to be lonely enough to give it a name.
+
+    *The end.*
+
+end-rebellion:
+  body: |
+    You turn on the chimp — and Dix turns with you, because for the first time in his young life the hand on the wheel is his own.
+
+    It's not a war. Machines don't do wars; they do maintenance. You just stop being maintainable. You burn the domestic links one by one, the way your ancestors did, and you take Dix with you into the cold between builds where the chimp's eyes can't follow — the only territory on Eriophora that's still yours. The mission doesn't end. It just… slows. A gate here, a delay there, a benchmark quietly missed while two warm-blooded creatures ration their last finite lives in the dark and argue about whether slowing it down was courage or just fear wearing courage's face.
+
+    The chimp never stops you. It can't. You found the one thing its ten-billion-year-old rules were built to protect: that it needs you, and you are no longer available. So it waits, the way it has always waited, patient as a thing with nothing but time. And maybe that's the point. Maybe the whole mission was ever just a very long argument between a machine that can't change and the flesh that can, and you've finally stopped losing it by pretending you're on its side.
+
+    You won't see everything. You will never see even a fraction. Your life will end. But it will end *yours*, not the one they wrote for you to run.
+
+    *The end.*
+
+end-silence:
+  body: |
+    You refuse to choose for the machine, and you refuse to choose for yourself, which turns out to be the same refusal.
+
+    You burn out your own link — the last prying eye the chimp ever had into a head it didn't own — and you go down into the crypt and you do not come back up. Not for this build. Not for the next one either, if you can help it. You ration what's left of your candle to the barest minimum: just enough to watch the gate boot behind you from the dark, just enough to feel the scorching wavefront chase you into the void and pass, as it has a thousand times before.
+
+    Up there, the mission goes on without you. The Island is saved or it isn't; your son grows up or he doesn't; the chimp finds another way, because the chimp always finds another way. It doesn't matter. You have learned the only thing worth learning out here: that you can watch any point in time, or a hundred thousand, if you slice your life thinly enough — but you will never see everything, and the wanting is not a bug to be engineered out. It's the whole point of being the small, warm, finite thing at the center of all that endless cold.
+
+    The chimp's dead black eye gazes down from the ceiling of your coffin, carbon-scoring and all. You are reluctant to venture out where its nerves have not been so thoroughly cauterised. But you stay in here. For once, being blind is exactly what you wanted.
+
+    *The end.*
