@@ -1,0 +1,108 @@
+# Build the reader-beware HTML game and publish it to GitHub Pages on every
+# push to main. The html/ directory in this repo is committed (kept as the
+# source of truth), so the pages job simply re-publishes that folder; the
+# build step here regenerates it from narrative.yaml so a stale or missing
+# html/ can't ship, and validates the narrative before we publish.
+name: Deploy game to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Validate narrative and rebuild html/
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # reader-beware is the sibling package that builds this gamebook.
+      - name: Install reader-beware
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install ../reader-beware
+
+      - name: Validate narrative structure (links, reachability, dead ends)
+        run: beware check --narrative-path narrative.yaml
+
+      # Regenerate html/ from the current narrative.yaml so what we publish
+      # always matches the committed source. build-html wipes and rewrites
+      # the output folder in place.
+      - name: Rebuild html/
+        run: beware build-html --narative-path narrative.yaml --output html
+
+      # The entry page is html/entrypoint-{}.html; index.html at the site root
+      # redirects to it, so make sure both exist before we ship.
+      - name: Check entry point exists
+        run: |
+          test -f html/index.html || (echo "missing html/index.html" && exit 1)
+          test -f 'html/entrypoint-{}.html' || (echo "missing entrypoint page" && exit 1)
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: html
+
+  deploy:
+    needs: build
+    name: Publish to github.io
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  # MOBI build is separate and non-blocking for the site: it needs Calibre's
+  # ebook-convert, which isn't preinstalled on the runner. It uploads the
+  # .mobi (or the fallback .epub) as a workflow artifact you can download.
+  mobi:
+    name: Build MOBI (Calibre)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install reader-beware
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install ../reader-beware
+
+      # Calibre provides ebook-convert (used by `beware build-mobi`). Without
+      # it, the builder still emits a Kindle-ready .epub as a fallback.
+      - name: Install Calibre
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y calibre
+
+      - name: Build MOBI / EPUB
+        run: beware build-mobi --narative-path narrative.yaml --output the_island_gamebook_mobi --book-config book-config.yaml
+
+      - name: Upload ebook artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: the-island-gamebook-ebook
+          path: |
+            the_island_gamebook_mobi.mobi
+            the_island_gamebook_mobi.epub
+          if-no-files-found: warn
