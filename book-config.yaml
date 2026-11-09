@@ -10,3 +10,9 @@ description: |
   the original and its opposite.
 publisher: Free Editions
 identifier: urn:reader-beware:the-island-1
+# Interstitial "dead" pages dropped between each section and the next so a
+# reader flipping through linearly can't get lost. Worded like long-term
+# nuclear waste warning messages; choice links jump straight over them.
+# Set `count: 0` (or delete this block) to turn them off.
+dead_pages:
+  count: 3
