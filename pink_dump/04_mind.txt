@@ -1,0 +1,267 @@
+
+
+
+
+Reader Beware
+ · mind (deal=0, dix_burned=0, lean=heart, perspective=pink)
+
+
+
+
+ 
+
+
+
+
+ 
+
+ 
+She asks the chimp for the spectro and reads it aloud like a woman learning to read for the first time, and I watch her face as the shape of the thing assembles itself behind her eyes. I run the numbers in parallel, because that's what I do — but she's the one asking the questions now, and I've learned not to answer until she asks.
+
+
+
+Phaeophytin and eumelanin, according to spectro. There are even hints of some kind of lead-based mineral pigment — a name she'll never remember, something that sounds like a brand of paint — soaking up X-rays in the picometer range. The chimp hypothesizes something called a chromatophore: branching cells with little aliquots of pigment inside, like particles of charcoal dust. Keep those particles clumped together and the cell's effectively transparent; spread them out through the cytoplasm and the whole structure darkens, dims whatever EM passes through from behind. Apparently there were animals back on Earth with cells like that. They could change color, pattern-match to their background, all sorts of things.
+
+
+
+"So there's a membrane of — of living tissue around that star," she says, trying to wrap her head around the concept. "A, a meat balloon. Around the whole damn star."
+
+
+
+"Yes," the chimp says.
+
+
+
+"But that's — Jesus, how thick would it be?"
+
+
+
+"No more than two millimeters. Probably less."
+
+
+
+"How so?"
+
+
+
+"If it was much thicker, it would be more obvious in the visible spectrum. It would have had a detectable effect on the von Neumanns when they hit it."
+
+
+
+"That's assuming that its — cells, I guess — are like ours."
+
+
+
+"The pigments are familiar; the rest might be too."
+
+
+
+She turns to me and I answer before she finishes asking: "Half the mass of Mercury," I say, and then, because the chimp can't resist a correct fact, it says the same thing in unison.
+
+
+
+"That's, uh..." she says.
+
+
+
+I whistle through my teeth. That's one organism. Or at least one 
+part
+ of one. The thinking part is almost six thousand kilometers across — the rest of the membrane is mostly empty photosynthesizing tissue, all skin and no brain. But even the skin weighs as much as a planet.
+
+
+
+"It's got organic pigments," she says. "Fuck, it's talking. It's intelligent."
+
+
+
+"Most cyclic emanations from living sources are simple biorhythms," the chimp points out. "Not intelligent signals."
+
+
+
+She ignores it and turns to me. "Assume it's a signal."
+
+
+
+I frown. "Chimp says —"
+
+
+
+"Assume. Use your imagination."
+
+
+
+I'm not getting through to her. Or maybe she's not getting through to me. I look nervous. I look like that a lot, I realize. She can see it in my face the way you can see a crack in a hull: not from the outside, but from where the pressure is.
+
+
+
+"If someone were signaling you," she says, "then what would you do?"
+
+
+
+"Signal..." Confusion on my face, and a fuzzy circuit closing somewhere "...back?"
+
+
+
+She sighs. My mother is an idiot.
+
+
+
+"And if the incoming signal takes the form of systematic changes in light intensity, how —"
+
+
+
+"Use the BI lasers, alternated to pulse between 700 and 3000 nanometers. Can boost an interlaced signal into the exawatt range without compromising our fenders; gives over a thousand Watts per square meter after diffraction. Way past detection threshold for anything that can sense thermal output from a red dwarf. And content doesn't matter if it's just a shout. Shout back. Test for echo."
+
+
+
+Okay, so I'm an idiot savant. She says it out loud, almost to herself, and I flinch anyway.
+
+
+
+And I still look unhappy — "But Chimp, he says no real information there, right?" — because that's the truth of it, and the chimp is always the first voice in my head, and she can hear me deferring to it before I even finish the sentence.
+
+
+
+She takes my silence for amnesia. "Too simple, remember? Simple click train."
+
+
+
+I shake my head. There's more information in that signal than the chimp can imagine. I can feel it in the pattern the way you feel a draft in a sealed room: somewhere in this ship, something is not closed off that should be. And the last thing I need is for her to start looking at me like I'm the smart one, or worse, like I'm one of 
+them
+.
+
+
+
+"It's a deceleration curve," she tells us both. "It keeps slowing down. Over and over again. That's the message."
+
+
+
+Stop. Stop. Stop. Stop.
+
+
+
+And I think — she thinks — it's meant for no one but us.
+
+
+
+She shuts down all desires and misgivings, conserves whatever life she has left for moments that matter, removes herself from this sparse tactical intelligence, from this wet-eyed pup watching her as though she's some kind of sorcerer about to vanish in a puff of smoke. I open my mouth to speak, and she turns away and hurries down to oblivion.
+
+
+
+The chimp tells me to sleep. But I make a decision of my own: I don't go back down. I stay in the tank, with the pattern running behind my closed eyes, counting cycles the way you count your own heartbeat in a dark room: 92.5 corsecs, 92.5 corsecs, each one a little slower than the last.
+
+
+
+Three hours later she's up in the starbow commons and I'm still at the tank when the chimp wakes me to tell me she wants the forward feeds. "You're up early," it says at last, and she is; our answering shout hasn't even arrived at its destination yet. No real chance of new data for another two months, at least.
+
+
+
+"Show me the forward feeds," she commands.
+
+
+
+DHF428 blinks at her from the center of the lounge: Stop. Stop. Stop.
+
+
+
+Maybe. Or maybe the chimp's right, maybe it's pure physiology. Maybe this endless cycle carries no more intelligence than the beating of a heart. But there's a pattern inside the pattern, some kind of flicker in the blink. It makes her brain itch. I can see it happening from where I'm standing at the edge of the commons, watching her watch the star.
+
+
+
+"Slow the time-series," she commands. "By a hundred."
+
+
+
+It is a blink. 428's disk isn't darkening uniformly, it's eclipsing. As though a great eyelid were being drawn across the surface of the sun, from right to left.
+
+
+
+"By a thousand."
+
+
+
+Chromatophores, the chimp called them. But they're not all opening and closing at once. The darkness moves across the membrane in waves.
+
+
+
+A word pops into her head: latency. I know the word too. I've always known the word. It's one of the things the chimp taught me that it never explained why.
+
+
+
+"Chimp. Those waves of pigment. How fast are they moving?"
+
+
+
+"About fifty-nine thousand kilometers per second."
+
+
+
+The speed of a passing thought.
+
+
+
+And if this thing does think, it'll have logic gates, synapses — it's going to be a net of some kind. And if the net's big enough, there's an I in the middle of it. Just like her. Just like me. Just like the chimp. (Which is why she educated herself on the subject, back in the early tumultuous days of their relationship. Know your enemy and all that.)
+
+
+
+The thing about I is, it only exists within a tenth-of-a-second of all its parts. When you get spread too thin — when someone splits your brain down the middle, say, chops the fat pipe so the halves have to talk the long way around; when the neural architecture diffuses past some critical point and signals take just that much longer to pass from A to B — the system, well, decoheres. The two sides of your brain become different people with different tastes, different agendas, different senses of themselves.
+
+
+
+I shatters into we.
+
+
+
+It's not just a human rule, or a mammal rule, or even an Earthly one. It's a rule for any circuit that processes information, and it applies as much to the things we've yet to meet as it did to those we left behind.
+
+
+
+Fifty-nine thousand kilometers per second, the chimp says. How far can the signal move through that membrane in a tenth of a corsec? How thinly does I spread itself across the heavens?
+
+
+
+The flesh is huge, the flesh is inconceivable. But the spirit, the spirit is —
+
+
+
+Shit.
+
+
+
+"Chimp. Assuming the mean neuron density of a human brain, what's the synapse count on a circular sheet of neurons one millimeter thick with a diameter of five thousand eight hundred ninety-two kilometers?"
+
+
+
+"Two times ten to the twenty-seventh."
+
+
+
+I saccade — she saccades — the database for some perspective on a mind stretched across thirty million square kilometers: the equivalent of two quadrillion human brains. Of course, whatever this thing uses for neurons have to be packed a lot less tightly than ours; we can see through them, after all. Let's be superconservative, say it's only got a thousandth the computational density of a human brain. That's —
+
+
+
+Okay, let's say it's only got a ten-thousandth the synaptic density, that's still —
+
+
+
+A hundred thousandth. The merest mist of thinking meat. Any more conservative and she'd hypothesize it right out of existence.
+
+
+
+Still more human brains than have ever lived. More, by a factor that stops meaning anything.
+
+
+
+I don't know how to feel about that. She doesn't either — I can see it in the way her hand hovers over the tank's controls and doesn't move. This is no mere alien. But she's not quite ready to believe in gods.
+
+
+
+
+Read the trace before you shout back
+
+
+
+ 
+
+
+

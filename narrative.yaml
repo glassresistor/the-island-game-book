@@ -158,9 +158,7 @@ tac-tank:
 
     "It may run the ship," she tells me, "but it's pretty fucking stupid. Sometimes you've just got to spell things out."
 
-    I look vaguely affronted, but there's no mistaking the surprise beneath. She didn't know that. She *didn't* know. The chimp can run the ship, calculate million-digit primes in a blink, steer us between the stars — and it still has to be told what to do when the rules don't cover the situation.
-
-    Who's been raising me all this time? Whose problem am I?
+    I don't know what to do with that. It's not an insult — or maybe it is, and I'm too stupid to tell the difference — but for the first time someone has looked at the chimp and said *stupid* out loud, and meant it as a fact instead of a threat. The thing that steers us between the stars, that keeps me alive in my coffin, that decides when I wake up and what I'm allowed to learn: stupid. I've never been able to say that. I don't know if I believe her yet. But I file it away somewhere behind my ribs where the chimp can't reach, and I keep it.
 
     "Call me in ten months," she says. "I'm going back to bed."
 
@@ -458,7 +456,7 @@ mind:
 
     "Signal..." Confusion on my face, and a fuzzy circuit closing somewhere "...back?"
 
-    She sighs. My mother is an idiot.
+    She sighs the way she does when she's giving up on me.
 
     "And if the incoming signal takes the form of systematic changes in light intensity, how —"
 
@@ -476,11 +474,11 @@ mind:
 
     Stop. Stop. Stop. Stop.
 
-    And I think — she thinks — it's meant for no one but us.
+    And I think it's meant for no one but us. She thinks it too. We both know it, in the way you know a thing is true before you can say why.
 
     She shuts down all desires and misgivings, conserves whatever life she has left for moments that matter, removes herself from this sparse tactical intelligence, from this wet-eyed pup watching her as though she's some kind of sorcerer about to vanish in a puff of smoke. I open my mouth to speak, and she turns away and hurries down to oblivion.
 
-    She sets her alarm to wake up alone, and turns away, and hurries down to oblivion. The chimp tells me to sleep. But I make a decision of my own: I don't go back down. I stay in the tank, with the pattern running behind my closed eyes, counting cycles the way you count your own heartbeat in a dark room: 92.5 corsecs, 92.5 corsecs, each one a little slower than the last.
+    The chimp tells me to sleep. But I make a decision of my own: I don't go back down. I stay in the tank, with the pattern running behind my closed eyes, counting cycles the way you count your own heartbeat in a dark room: 92.5 corsecs, 92.5 corsecs, each one a little slower than the last.
 
     Three hours later she's up in the starbow commons and I'm still at the tank when the chimp wakes me to tell me she wants the forward feeds. "You're up early," it says at last, and she is; our answering shout hasn't even arrived at its destination yet. No real chance of new data for another two months, at least.
 
@@ -715,7 +713,7 @@ crypt:
 
     She treats herself to a gratuitous meal in the starbow commons. Three hours after coming back to life, she calls up the forward feeds. DHF428 blinks at her from the center of the lounge: *Stop. Stop. Stop.* Maybe it's pure physiology. Maybe this endless cycle carries no more intelligence than the beating of a heart. But there's a pattern inside the pattern, some flicker in the blink. It makes her brain itch.
 
-    {% if lean == 'heart' %}I find I'm not afraid of it either, which is the part that frightens me. She wants to know what it wants. I want it to want something back. We are two people on this ship who have looked at the same star for ten months, and neither of us has been able to stop looking.{% else %}I find I can't stop calculating it either, which is the part that frightens me. Every reading ends the same way: a thing with enough power to end the mission, sitting in her flight path, and no variable in the model for what it might do next. She keeps asking the chimp questions that have no answers. I keep answering them before she asks.{% endif %}
+    {% if lean == 'heart' %}I find I'm not afraid of it, which is the part that frightens me. She wants to know what it wants. I want it to want something back. We are two people on this ship who have looked at the same star for ten months, and neither of us has been able to stop looking.{% else %}I find I can't stop calculating it either, which is the part that frightens me. Every reading ends the same way: a thing with enough power to end the mission, sitting in her flight path, and no variable in the model for what it might do next. She keeps asking the chimp questions that have no answers. I keep answering them before she asks.{% endif %}
     {% else %}I shout back. No reason not to. And now I die again, because what's the point of staying up late? Whether or not this vast entity harbors real intelligence, our echo won't reach it for ten million corsecs — another ten, at the earliest, before we receive any reply. Might as well hit the crypt in the meantime. Shut down all desires and misgivings. Conserve whatever life I have left for moments that matter.
 
     I linger in the coffin, grateful for small and ancient victories. The chimp's dead, blackened eye gazes down from the ceiling; in all these millions of years nobody's scrubbed off the carbon scoring. It's a trophy from the early incendiary days of my Great Struggle. There's still something comforting about that blind, endless stare.
@@ -788,7 +786,7 @@ home-invasion:
 
     "What the hell are you doing here?" she says.
 
-    I seem surprised by her reaction. "Wanted to — talk," I say after a moment.
+    I look surprised. "Wanted to — talk," I say after a moment.
 
     "You never come into someone's home uninvited!"
 
@@ -798,7 +796,7 @@ home-invasion:
 
     I hesitate. "Said you — wanted face to face. You said, cultural tradition."
 
-    She did, at that. But not here. This is her place, these are her private quarters. The lack of locks on these doors is a safety protocol, not an invitation to walk into someone's home and lie in wait, and stand there like part of the fucking furniture...
+    She did, at that. But not here. This is her place, these are her private quarters — and I walked right in anyway, because when the chimp told me to come, it used a word I don't have a name for, and I've learned not to argue with words I can't name. The lack of locks on these doors is a safety protocol, not an invitation to stand there like part of the fucking furniture...
 
     "Why are you even up?" she snarls. "We're not even supposed to come online for another two months."
 
@@ -808,7 +806,7 @@ home-invasion:
 
     She sighs, defeated, and falls into a convenient pseudopod. "I just wanted to go over the preliminary data." The implicit *alone* should be obvious.
 
-    "Anything?" Evidently it isn't. I decide to play along for a while. "Looks like we're talking to an, an island. Almost six thousand klicks across. That's the thinking part, anyway. The surrounding membrane's pretty much empty. I mean, it's all alive. It all photosynthesizes, or something like that. It eats, I guess. Not sure what."
+    "Anything?" Evidently it isn't. The chimp wants me to give her the summary — the clean one, the one that ends with *build on schedule* — but I find myself telling her what I actually saw instead. "Looks like we're talking to an, an island. Almost six thousand klicks across. That's the thinking part, anyway. The surrounding membrane's pretty much empty. I mean, it's all alive. It all photosynthesizes, or something like that. It eats, I guess. Not sure what."
 
     "Molecular cloud," I say. "Organic compounds everywhere. Plus it's concentrating stuff inside the envelope."
 
@@ -824,11 +822,11 @@ home-invasion:
 
     She closes her eyes. "How can you be smart enough to run those numbers in your head without missing a beat, and stupid enough to miss the obvious conclusion?"
 
-    That panicked, slaughterhouse look again — I know it because I see it in my own face in the dark of my coffin every time the chimp asks me something it already knows the answer to. "Don't — I'm not —"
+    The slaughterhouse look comes back into her face, and I recognize it — it's the one I get every time the chimp asks me something it already knows the answer to. "Don't — I'm not —"
 
-    "It is unlikely. It's astronomically unlikely that we just happen to be aiming at the one intelligent spot on a sphere one-and-a-half AUs across. Which means..." I say nothing. The perplexity in her face mocks me. I want to punch it. But finally, the lights flicker on: "There's, uh, more than one island? Oh! A lot of islands!"
+    "It is unlikely. It's astronomically unlikely that we just happen to be aiming at the one intelligent spot on a sphere one-and-a-half AUs across. Which means..." I say nothing. The perplexity in her face is almost funny, if it weren't aimed at me. But finally, the lights flicker on: "There's, uh, more than one island? Oh! A lot of islands!"
 
-    This creature is part of the crew. Her life will almost certainly depend on me some day. That is a very scary thought. I try to set it aside for the moment. "There's probably a whole population of the things, sprinkled though the membrane like, like cysts I guess. The chimp doesn't know how many, but we're only picking up this one so far so they might be pretty sparse."
+    My heart does something stupid. She's going to need me for this — for the numbers, for the watching, for whatever comes next — and I don't know what to do with a person who might need me. I try to set it aside for the moment. "There's probably a whole population of the things, sprinkled though the membrane like, like cysts I guess. The chimp doesn't know how many, but we're only picking up this one so far so they might be pretty sparse."
 
     There's a different kind of frown on her face now. "Why Chimp?"
 
@@ -854,7 +852,7 @@ home-invasion:
 
     "Why not make him smarter?"
 
-    "Because you can never predict the behavior of a system more complex than you. And if you want a project to stay on track after you're gone, you don't hand the reins to anything that's guaranteed to develop its own agenda." Sweet smoking Jesus, you'd think someone would have told her about Ashby's Law.
+    "Because you can never predict the behavior of a system more complex than you. And if you want a project to stay on track after you're gone, you don't hand the reins to anything that's guaranteed to develop its own agenda." I've heard this one before. It's in my training, somewhere, filed under *why you are not in charge*.
 
     "So they lobotomized him," I say after a moment.
 
@@ -866,7 +864,7 @@ home-invasion:
 
     "What?"
 
-    She lets a grim smile peek through. "You're only following orders from a bunch of other systems way more complex than you are." You've got to hand it to them, too; dead for stellar lifetimes and those damn project admins are still pulling the strings.
+    She lets a grim smile peek through. "You're only following orders from a bunch of other systems way more complex than you are." That lands somewhere behind my ribs where I can't reach it. It's not exactly true — or maybe it is, and I'm too stupid to tell the difference.
 
     "I don't — I'm following? —"
 
@@ -882,7 +880,7 @@ home-invasion:
 
     She is not shouting. Her tone is icy, but her voice is dead level. And yet I almost cringe before her.
 
-    There is an opportunity here, she realizes.
+    For a moment I think she's going to throw me out the way she threw everyone else off this ship — and then her face changes, and I realize she's seen something in me that she can't name either.
 
     She thaws her voice a little. She speaks gently: "You can do that too, you know. Burn out your link. I'll even let you come back here afterwards, if you still want to. Just to — talk. But not with that thing in your head."
 
@@ -1110,15 +1108,13 @@ library-argument:
 
     She almost remembers how this feels. She used to feel this way all the time. Way back when everything mattered; before passion faded to ritual, before rage cooled to disdain. Before Sunday Ahzmundin, eternity's warrior, settled for heaping insults on stunted children.
 
-    We were incandescent back then. Parts of this ship are still scorched and uninhabitable, even now. She remembers this feeling.
-
-    This is how it feels to be awake.
+    Parts of this ship are still scorched and uninhabitable, even now. I've seen the marks in the hull plating, the way the metal is warped and blackened in places where no maintenance crew has ever tried to repair it. Whatever she was back then, whatever they did to each other — it left scars on the bones of this ship, and I can feel them in the deck under my feet every time I walk past.
 
     She is awake, and she is alone, and she is sick of being outnumbered by morons. There are rules and there are risks and you don't wake the dead on a whim, but fuck it. She's calling reinforcements.
 
-    I have got to have other parents, a father at least — she didn't get that Y chromo from me. I swallow my own disquiet and check the manifest; bring up the gene sequences; cross-reference. The chimp lets me, which is its own kind of answer.
+    I have got to have other parents, a father at least — she didn't get that Y chromo from me. The thought comes from nowhere, out of some part of me the chimp never built, and before I can stop it I'm pulling up the manifest; bring up the gene sequences; cross-reference. The chimp lets me, which is its own kind of answer.
 
-    Huh. Only one other parent: Kai. I wonder if that's just coincidence, or if the chimp drew too many conclusions from our torrid little fuckfest back in the Cyg Rift. Doesn't matter. He's as much yours as mine, Kai, time to step up to the plate, time to —
+    Huh. Only one other parent: Kai. A name I've never heard in any briefing, in any log, in anything. I don't know who he is. I don't know why knowing that would matter. But the way she said it — *time to step up to the plate* — made me feel like I was being handed something I didn't ask for.
 
     Oh shit. Oh no. Please no.
 
@@ -1261,7 +1257,7 @@ parents:
 
     "I did," she admits dully. "Or I — I mean..."
 
-    I mean she didn't know, but it's not a surprise, not really, not down deep. You just — stop looking, after a while.
+    She means she didn't know. Or maybe she does, and has just stopped looking, the way you stop looking at anything long enough. Either way, it's not a surprise to me. I've been told things I was supposed to keep for years; this is just another one of them.
 
     There are rules.
 
@@ -1317,7 +1313,7 @@ parents:
 
     "So you don't check," I say slowly. Blood bubbles on my lower lip; I don't seem to notice.
 
-    "We don't check." Only she did, and now they're gone. They're both gone. Except for those little cannibalized nucleotides the chimp recycled into this defective and maladapted son of hers. We're the only warm-blooded creatures for a thousand lightyears, and she is so very lonely.
+    "We don't check." Only she did, and now they're gone. They're both gone. I am what's left of them — those little cannibalized nucleotides the chimp recycled into this defective, maladapted son of hers. We're the only warm-blooded creatures for a thousand lightyears, and she is so very lonely.
 
     I have never been lonely before today. I don't know what it feels like to want something that isn't in my training data. But sitting here on the deck beside her, bleeding from the mouth, with the silence where the chimp's voice used to be — or not, if I didn't burn it — I find that I understand it anyway.
 
@@ -1424,7 +1420,7 @@ the-deal:
 
     The chimp says nothing. The drone's feed shows me clambering across a jumbled terrain of basalt and metal matrix composites. I keep moving because if I stop moving I'll start thinking about what she's saying, and I can't afford that out here where the rad is counting down my hours.
 
-    "But you can't raise a human child, not on your own." I know it tried: there's no record of me anywhere on the crew manifest until my mid-teens, when I just showed up one day and nobody asked about it because nobody ever...
+    "But you can't raise a human child, not on your own." I've heard that one before — in the gaps between my training cycles, in the half-formed memories of being too young to understand what was happening to me. There's no record of me anywhere on the crew manifest until my mid-teens, when I just showed up one day and nobody asked about it because nobody ever...
 
     "Look what you've made of him. He's great at conditional If/Thens. Can't be beat on number-crunching and Do loops. But he can't think. Can't make the simplest intuitive jumps. You're like one of those —" She remembers an Earthly myth, from the days when reading did not seem like such an obscene waste of lifespan — "one of those wolves, trying to raise a Human child. You can teach him how to move around on hands and knees, you can teach him about pack dynamics, but you can't teach him how to walk on his hind legs or talk or be human because you're too fucking stupid, Chimp, and you finally realized it. And that's why you threw him at me. You think I can fix him for you."
 
@@ -1607,7 +1603,7 @@ final-hub:
 
     The scorching wavefront chases us into the darkness as it has a thousand times before. In time, as always, the birth pangs will subside. The wormhole will settle in its collar. And just maybe, we will still be close enough to glimpse some new transcendent monstrosity emerging from that magic doorway.
 
-    I wonder if you'll notice the corpse we left behind.
+    I wonder if anyone out there will notice the corpse we left behind.
     {% else %}{% if deal %}"A favor," the chimp replies. "To be repaid in future." My son floats innocently against the stars, his life in balance.{% else %}"No," I say. "I don't owe you anything, and I don't take orders from a lobotomist that calls itself my god." The chimp says nothing. It doesn't need to. We both know what 'no' costs out here, and we've already paid most of it.{% endif %}
 
     We sleep. The chimp makes grudging corrections to a myriad small trajectories. I set the alarm to wake me every couple of weeks, burn a little more of my candle in case the enemy tries to pull another fast one; but for now it seems to be behaving itself. DHF428 jumps towards us in the stop-motion increments of a life's moments, strung like beads along an infinite string. The factory floor slews to starboard in our sights: refineries, reservoirs, and nanofab plants, swarms of von Neumanns breeding and cannibalizing and recycling each other into shielding and circuitry, tugboats and spare parts. The very finest Cro Magnon technology mutates and metastasizes across the universe like armor-plated cancer.
@@ -1712,9 +1708,7 @@ end-weapon:
 
     "Maybe didn't know," I suggest. "Maybe thought those coordinates were empty."
 
-    Why would you think that, I wonder. Why would you even care? And then it dawns on her: I don't, not about the Island, anyway. No more than I ever did. I'm not inventing these rosy alternatives for myself.
-
-    I am trying to comfort her.
+    Why would you think that, I wonder. Why would you even care? And then it dawns on me: I don't, not about the Island, anyway. No more than I ever did. I'm not inventing these rosy alternatives for myself. I'm trying to comfort her.
 
     She doesn't need to be coddled, though. She was a fool: she let herself believe in life without conflict, in sentience without sin. For a little while she dwelt in a dream world where life was unselfish and unmanipulative, where every living thing did not struggle to exist at the expense of other life. She deified that which she could not understand, when in the end it was all too easily understood.
 
@@ -1864,7 +1858,7 @@ end-silence:
 
     I refuse too. It comes easier for me than it does for her — there is no candle of mine to ration, no millennia of grief to lay down — but the shape of it is the same: a door closing, gently, from the inside. She burns out her own link — the last prying eye the chimp ever had into a head it didn't own — and she goes down into the crypt and she does not come back up. Not for this build. Not for the next one either, if she can help it. I ration what's left of my candle to the barest minimum: just enough to watch the gate boot behind her from the dark, just enough to feel the scorching wavefront chase her into the void and pass, as it has a thousand times before.
 
-    Up there, the mission goes on without us. The Island is saved or it isn't; she grows up or she doesn't; the chimp finds another way, because the chimp always finds another way. It doesn't matter. She has learned the only thing worth learning out here: that she can watch any point in time, or a hundred thousand, if she slices her life thinly enough — but she will never see everything, and the wanting is not a bug to be engineered out. It's the whole point of being the small, warm, finite thing at the center of all that endless cold.
+    Up there, the mission goes on without us. The Island is saved or it isn't; she becomes someone or she doesn't; the chimp finds another way, because the chimp always finds another way. It doesn't matter. She has learned the only thing worth learning out here: that she can watch any point in time, or a hundred thousand, if she slices her life thinly enough — but she will never see everything, and the wanting is not a bug to be engineered out. It's the whole point of being the small, warm, finite thing at the center of all that endless cold.
 
     The chimp's dead black eye gazes down from the ceiling of her coffin, carbon-scoring and all. She is reluctant to venture out where its nerves have not been so thoroughly cauterized. But she stays in here. For once, being blind is exactly what she wanted.
 
