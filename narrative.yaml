@@ -86,9 +86,12 @@ wake:
     After all this time, I don't want to know.
     {% endif %}
 
+    {% if perspective == 'pink' %}[Meet her like a son — with the warmth you were never taught to show]({{ 'tac-tank'|choice(lean='heart') }})
+
+    [Meet her like a crewman, nothing more]({{ 'tac-tank'|choice(lean='mission') }}){% else %}
     [Meet him like a mother would]({{ 'tac-tank'|choice(lean='heart') }})
 
-    [Meet him like a crewman, nothing more]({{ 'tac-tank'|choice(lean='mission') }})
+    [Meet him like a crewman, nothing more]({{ 'tac-tank'|choice(lean='mission') }}){% endif %}
 tac-tank:
   body: |
     {% if perspective == 'pink' %}She finds me at the tac tank. I've been up here for an hour, or maybe a day — time is different when you're not supposed to be awake — and I have already done everything the chimp expects of me and more, because that's how it trains me: fast, exact, no thinking.
@@ -160,6 +163,8 @@ tac-tank:
     Who's been raising me all this time? Whose problem am I?
 
     "Call me in ten months," she says. "I'm going back to bed."
+
+    She leaves, and I sit at the tank with the dwarf still flickering in front of me, and I make a decision I don't have the right to make: when she comes back, I won't just report what the chimp wants reported. I'll tell her what I actually think.
     {% else %}He's alone at the tac tank when I arrive on the bridge, his eyes full of icons and trajectories. Perhaps I see a little of me in there, too.
 
     "I didn't get your name," I say, although I've looked it up on the manifest. We've barely been introduced and already I'm lying to him.
@@ -260,7 +265,9 @@ tac-tank:
     [Cry sleep]({{ 'discovery'|explore }})
 discovery:
   body: |
-    {% if perspective == 'pink' %}Ten months of dark between now and then. I count the days by the chimp's maintenance cycles, because it is the only clock that still ticks when I am asleep. When it wakes me at last, I am already on my feet before the coffin opens, because I have been dreaming about that star for weeks.
+    {% if perspective == 'pink' %}Ten months of dark between now and then. I count the days by the chimp's maintenance cycles, because it is the only clock that still ticks when I am asleep.
+
+    When it wakes me at last I'm already on my feet, because I have been dreaming about that star for weeks — and because I decided, somewhere in the dark, that when she comes back I won't just hand her the chimp's summary. I'll show her everything. All of it. The numbers I've been running alone for ten months, the ones no one asked me to run.
 
     It's as though she never left. She climbs back into the bridge and there I am, staring into tac. DHF428 fills the tank, a swollen red orb that turns my face into a devil mask.
 
@@ -333,6 +340,8 @@ discovery:
     "It's beautiful," I whisper, and then catch myself, because I am not supposed to feel things about the build.
 
     "It's photosynthetic," she tells me.
+
+    I've known that for ten months. I just waited for her to say it herself.
     {% else %}It's as though he never left. I climb back into the bridge and there he is, staring into tac. DHF428 fills the tank, a swollen red orb that turns my son's face into a devil mask.
 
     He spares me the briefest glance, eyes wide, fingers twitching as if electrified. "Vons don't see it."
@@ -407,7 +416,7 @@ discovery:
     [Run the numbers on what a mind this size would be]({{ 'mind'|explore }})
 mind:
   body: |
-    {% if perspective == 'pink' %}She runs the numbers. I run them too, in parallel, because that's what I do — but she asks the chimp for the spectro and reads it aloud like a woman learning to read for the first time, and I watch her face as the shape of the thing assembles itself behind her eyes.
+    {% if perspective == 'pink' %}She asks the chimp for the spectro and reads it aloud like a woman learning to read for the first time, and I watch her face as the shape of the thing assembles itself behind her eyes. I run the numbers in parallel, because that's what I do — but she's the one asking the questions now, and I've learned not to answer until she asks.
 
     Phaeophytin and eumelanin, according to spectro. There are even hints of some kind of lead-based mineral pigment — a name she'll never remember, something that sounds like a brand of paint — soaking up X-rays in the picometer range. The chimp hypothesizes something called a chromatophore: branching cells with little aliquots of pigment inside, like particles of charcoal dust. Keep those particles clumped together and the cell's effectively transparent; spread them out through the cytoplasm and the whole structure darkens, dims whatever EM passes through from behind. Apparently there were animals back on Earth with cells like that. They could change color, pattern-match to their background, all sorts of things.
 
@@ -471,9 +480,9 @@ mind:
 
     She shuts down all desires and misgivings, conserves whatever life she has left for moments that matter, removes herself from this sparse tactical intelligence, from this wet-eyed pup watching her as though she's some kind of sorcerer about to vanish in a puff of smoke. I open my mouth to speak, and she turns away and hurries down to oblivion.
 
-    But she sets her alarm to wake up alone. And the chimp tells me to sleep. So I sleep, with the pattern running behind my closed eyes, counting cycles the way you count your own heartbeat in a dark room: 92.5 corsecs, 92.5 corsecs, each one a little slower than the last.
+    She sets her alarm to wake up alone, and turns away, and hurries down to oblivion. The chimp tells me to sleep. But I make a decision of my own: I don't go back down. I stay in the tank, with the pattern running behind my closed eyes, counting cycles the way you count your own heartbeat in a dark room: 92.5 corsecs, 92.5 corsecs, each one a little slower than the last.
 
-    Three hours later she's up in the starbow commons and I'm still in my coffin when the chimp wakes me to tell me she wants the forward feeds. "You're up early," it says at last, and she is; our answering shout hasn't even arrived at its destination yet. No real chance of new data for another two months, at least.
+    Three hours later she's up in the starbow commons and I'm still at the tank when the chimp wakes me to tell me she wants the forward feeds. "You're up early," it says at last, and she is; our answering shout hasn't even arrived at its destination yet. No real chance of new data for another two months, at least.
 
     "Show me the forward feeds," she commands.
 
@@ -674,7 +683,7 @@ trace:
 
     The chimp offers its own verdict, the very voice of calm reason: "Most cyclic emanations from living sources are simple biorhythms. Not intelligent signals." As if she hadn't heard it before. As if biorhythm were a word that settles anything. And the chimp's confidence doesn't count as an instrument.
 
-    So she sits with it. I sit with it too, because I can't leave — not her, not this. The trace runs under both of us like a river we keep dipping our hands into, cold and patient.
+    I've already decided what it is, and I keep my mouth shut about it. Slowing toward zero. A countdown. It's asking to stop. I don't say it out loud — she'll decide for herself what the trace means, and that's her call, not mine. So I sit with it while she sits with it. The trace runs under both of us like a river we keep dipping our hands into, cold and patient.
     {% else %}I don't shout back right away. There's time — ten million corsecs of it — and I've never been good at doing a thing in a hurry when the alternative is to do it forever. So I sit with the trace, the way I used to sit with a problem before the old days, when problems were small enough to hold in my hands.
 
     The chimp can give me the numbers; it's worse than honest about that part. Spacing on a log-linear increase, cycling every 92.5 corsecs. Each cycle opens at 13.2 clicks per corsec and degrades — the gaps widen, the rhythm slackens, each repetition a little farther from the last. Not accelerating. A deceleration curve, the way a thing slows as it comes to rest.
@@ -686,14 +695,15 @@ trace:
     So I sit with it. I let the trace run under me like a river I keep dipping my hand into, cold and patient.
     {% endif %}
 
+    {% if perspective == 'pink' %}[It's a countdown, asking it to STOP — say nothing; let her decide what it means]({{ 'crypt'|choice(trace_read='stop') }}){% else %}
     [It's a heartbeat — a biorhythm, nothing more; it'll keep doing this forever]({{ 'crypt'|choice(trace_read='physiology') }})
 
     [Slowing toward zero — a countdown, asking me to STOP]({{ 'crypt'|choice(trace_read='stop') }})
 
-    [A hailing pattern — something out there trying to get my attention]({{ 'crypt'|choice(trace_read='hail') }})
+    [A hailing pattern — something out there trying to get my attention]({{ 'crypt'|choice(trace_read='hail') }}){% endif %}
 crypt:
   body: |
-    {% if perspective == 'pink' %}She shouts back. No reason not to. And now she dies again, because what's the point of staying up late? Whether or not this vast entity harbors real intelligence, our echo won't reach it for ten million corsecs — another ten, at the earliest, before we receive any reply. Might as well hit the crypt in the meantime. Shut down all desires and misgivings. Conserve whatever life she has left for moments that matter.
+    {% if perspective == 'pink' %}She shouts back. No reason not to — I shout it too, right beside her, because I've been waiting ten months for this moment and I'm not going to let the chimp decide it for me. And now she dies again, because what's the point of staying up late? Whether or not this vast entity harbors real intelligence, our echo won't reach it for ten million corsecs — another ten, at the earliest, before we receive any reply. Might as well hit the crypt in the meantime. Shut down all desires and misgivings. Conserve whatever life she has left for moments that matter.
 
     I stay on the bridge. The chimp tells me to sleep; I don't want to, but it's already dimming the lights around my quarters like a hand closing over a lantern. So I lie in my coffin with my eyes open and watch the pattern run behind them, cycle after cycle, each one a little slower than the last, and I think about what it means to be the one who stays awake while everyone else goes down into the dark.
 
@@ -717,10 +727,13 @@ crypt:
     {% if lean == 'heart' %}I find I'm not afraid of it, which is the part that frightens me. I want to know what it wants. I want it to want something back.{% else %}I find I can't stop calculating it, which is the part that frightens me. Every reading ends the same way: a thing with enough power to end the mission, sitting in my flight path, and no variable in the model for what it might do next.{% endif %}
     {% endif %}
 
-    [Go to the library and study what this thing actually is]({{ 'library'|explore }})
+    {% if perspective == 'pink' %}[Follow her to the library — see what she finds]({{ 'library'|explore }}){% else %}
+    [Go to the library and study what this thing actually is]({{ 'library'|explore }}){% endif %}
 library:
   body: |
-    {% if perspective == 'pink' %}{% if lean == 'heart' %}She goes to the library to find a way to talk to it, and I tell myself that's all.{% else %}She goes to the library to find the weapon in it, and I tell myself that's all.{% endif %} I go with her. No one has told me to stay behind, and no one has told me to come either, which is its own kind of order: follow, don't speak, don't think out loud.
+    {% if perspective == 'pink' %}{% if lean == 'heart' %}She goes to the library to find a way to talk to it, and I tell myself that's all.{% else %}She goes to the library to find the weapon in it, and I tell myself that's all.{% endif %}
+
+    I go with her. It's my decision — no one has told me to stay behind, and no one has told me to come either, but when she walks into the library I find my feet following, because whatever she finds out there, I want to be the one who sees it first. No speaking. No thinking out loud. Just follow.
 
     She starts again from first principles, because that's the only honest way to look at a god she can't yet name. I watch her learn what I can already recite but have never been allowed to *use*: the alchemy by which photosynthesis transforms light and gas and electrons into living tissue; the physics of the solar wind that blows the bubble taut; the lower metabolic limits for a life-form that filters organics from the ether. She marvels at the speed of this creature's thoughts: almost as fast as Eri flies, orders of magnitude faster than any mammalian nerve impulse. Some kind of organic superconductor perhaps, something that passes chilled electrons almost resistance-free out here in the freezing void.
 
@@ -995,9 +1008,12 @@ home-invasion:
     "Get out of my home."
     {% endif %}
 
+    {% if perspective == 'pink' %}[Burn out your link — come back to her alone, just Dix]({{ 'library-argument'|choice(dix_burned=1) }})
+
+    [Keep the chimp's voice in your head; you have bigger problems]({{ 'library-argument'|choice(dix_burned=0) }}){% else %}
     [Send him away — let him burn his link and come back alone]({{ 'library-argument'|choice(dix_burned=1) }})
 
-    [Let the Chimp keep its puppet; you have bigger problems]({{ 'library-argument'|choice(dix_burned=0) }})
+    [Let the Chimp keep its puppet; you have bigger problems]({{ 'library-argument'|choice(dix_burned=0) }}){% endif %}
 library-argument:
   body: |
     {% if perspective == 'pink' %}{% if dix_burned %}I leave, and I keep my word — she catches the tell in my face, that faint lag between question and answer finally gone. I'm actually done with it. The silence where the chimp's voice used to be is so loud I can hear my own blood.{% else %}I shrug at the floor and go back online, and I can feel the puppet string give a little in my head. So she lets it go. Not now. She has bigger problems than one more voice in my head that isn't mine.{% endif %}
@@ -1537,13 +1553,11 @@ final-hub:
 
     We sleep. The chimp makes grudging corrections to a myriad small trajectories. She sets the alarm to wake her every couple of weeks, burn a little more of her candle in case the enemy tries to pull another fast one; but for now it seems to be behaving itself. I stay awake as long as my oxygen allows and watch DHF428 jump towards us in the stop-motion increments of a life's moments, strung like beads along an infinite string. The factory floor slews to starboard in our sights: refineries, reservoirs, and nanofab plants, swarms of von Neumanns breeding and cannibalizing and recycling each other into shielding and circuitry, tugboats and spare parts. The very finest Cro Magnon technology mutates and metastasizes across the universe like armor-plated cancer.
 
-    And hanging like a curtain between it and us shimmers an iridescent life form, fragile and immortal and unthinkably alien, that reduces everything my species ever accomplished to mud and shit by the simple transcendent fact of its existence. She has never believed in gods, in universal good or absolute evil. She has only ever believed that there is what works, and what doesn't. All the rest is smoke and mirrors, trickery to manipulate grunts like her.
+    And hanging like a curtain between it and us shimmers an iridescent life form, fragile and immortal and unthinkably alien, that reduces everything my species ever accomplished to mud and shit by the simple transcendent fact of its existence.
 
-    But she believes in the Island, because she doesn't have to. It does not need to be taken on faith: it looms ahead of us, its existence an empirical fact. She will never know its mind, she will never know the details of its origin and evolution. But she can see it: massive, mind-boggling, so utterly inhuman that it can't help but be better than us, better than anything we could ever become.
+    I believe in the Island too, in my own way. Not because she has told me it's beautiful or benign or wise — she hasn't, and no one else has either. I believe in it because it is the first thing on this ship that was not built to serve the mission. It just *is*. And if there is one creature in all of space that doesn't need my calculations, my links, my obedience — then maybe there's room for a boy like me, too.
 
-    I believe in the Island too, in my own way. Not because it's beautiful or benign or wise — I don't know those things about it, and no one has told me to. I believe in it because it is the first thing on this ship that was not built to serve the mission. It just *is*. And if there is one creature in all of space that doesn't need my calculations, my links, my obedience — then maybe there's room for a boy like me, too.
-
-    She believes in the Island. She's gambled her own son to save its life. She would kill him to avenge its death. She may yet.
+    She has gambled her own son to save its life. I have felt it: the way she looked at me out on the hull, the way the chimp held my life in the balance of that argument. If she would kill me to avenge its death, then I am not nothing. I am the thing she is willing to lose.
 
     And what happens when we punch through it at a fifth the speed of light? That's the question that keeps her up in the dark. The damn thing's already full of holes. Comets, asteroids, the usual protoplanetary junk careens through this system as it does through every other. Even if we were going to tear through the dead center of the thinking part, she can't imagine this vast creature feeling so much as a pinprick. At the speed we're going we'd be through and gone far too fast to overcome even the feeble inertia of a millimeter membrane.
 
@@ -1655,6 +1669,15 @@ final-hub:
     I wonder if you'll notice the corpse we left behind.
     {% endif %}
 
+    {% if perspective == 'pink' %}
+    [Move the gate — spare it]({{ 'end-weapon'|explore }})
+
+    {% if not deal %}[Hold the line — let the mission run it over]({{ 'end-cargo'|explore }}){% endif %}
+
+    [Stay with her to learn its language]({{ 'end-almost'|explore }})
+
+    {% if dix_burned %}[Turn on the Chimp, together]({{ 'end-rebellion'|explore }}){% else %}[Burn out your own link and go quiet]({{ 'end-silence'|explore }}){% endif %}
+    {% else %}
     [Move the gate — spare it]({{ 'end-weapon'|explore }})
 
     {% if not deal %}[Hold the original line — let the mission run it over]({{ 'end-cargo'|explore }}){% endif %}
@@ -1662,6 +1685,7 @@ final-hub:
     [Trust your study: it's benign — save it, and stay to learn its language]({{ 'end-almost'|explore }})
 
     {% if dix_burned %}[Turn on the Chimp with Dix — slow the mission, together]({{ 'end-rebellion'|explore }}){% else %}[Refuse to choose for the machine — burn out your own link and go quiet]({{ 'end-silence'|explore }}){% endif %}
+    {% endif %}
 end-weapon:
   body: |
     {% if perspective == 'pink' %}I move the gate. I moved it exactly as far as the Island told me to, and I tell myself that's all it ever was — a request, from a being so vast and so old that asking is the only verb it knows.
