@@ -416,7 +416,7 @@ mind:
   body: |
     {% if perspective == 'pink' %}She asks the chimp for the spectro and reads it aloud like a woman learning to read for the first time, and I watch her face as the shape of the thing assembles itself behind her eyes. I run the numbers in parallel, because that's what I do — but she's the one asking the questions now, and I've learned not to answer until she asks.
 
-    Phaeophytin and eumelanin, according to spectro. There are even hints of some kind of lead-based mineral pigment — a name she'll never remember, something that sounds like a brand of paint — soaking up X-rays in the picometer range. The chimp hypothesizes something called a chromatophore: branching cells with little aliquots of pigment inside, like particles of charcoal dust. Keep those particles clumped together and the cell's effectively transparent; spread them out through the cytoplasm and the whole structure darkens, dims whatever EM passes through from behind. Apparently there were animals back on Earth with cells like that. They could change color, pattern-match to their background, all sorts of things.
+    Phaeophytin and eumelanin, according to spectro. There are even hints of some kind of lead-based mineral pigment — something that sounds like a brand of paint, the sort of name you forget the moment it leaves your mouth — soaking up X-rays in the picometer range. The chimp hypothesizes something called a chromatophore: branching cells with little aliquots of pigment inside, like particles of charcoal dust. Keep those particles clumped together and the cell's effectively transparent; spread them out through the cytoplasm and the whole structure darkens, dims whatever EM passes through from behind. Apparently there were animals back on Earth with cells like that. They could change color, pattern-match to their background, all sorts of things.
 
     "So there's a membrane of — of living tissue around that star," she says, trying to wrap her head around the concept. "A, a meat balloon. Around the whole damn star."
 
@@ -448,9 +448,7 @@ mind:
 
     I frown. "Chimp says —"
 
-    "Assume. Use your imagination."
-
-    I'm not getting through to her. Or maybe she's not getting through to me. I look nervous. I look like that a lot, I realize. She can see it in my face the way you can see a crack in a hull: not from the outside, but from where the pressure is.
+    "Assume. Use your imagination," she says, and there's something in her voice — patient, almost gentle — that I've never heard her use on anyone before. She's not getting through to me. Or maybe I'm not letting her.
 
     "If someone were signaling you," she says, "then what would you do?"
 
@@ -462,11 +460,11 @@ mind:
 
     "Use the BI lasers, alternated to pulse between 700 and 3000 nanometers. Can boost an interlaced signal into the exawatt range without compromising our fenders; gives over a thousand Watts per square meter after diffraction. Way past detection threshold for anything that can sense thermal output from a red dwarf. And content doesn't matter if it's just a shout. Shout back. Test for echo."
 
-    Okay, so I'm an idiot savant. She says it out loud, almost to herself, and I flinch anyway.
+    She watches my face while I say it, and I can see her working through what just happened: a boy who was supposed to be a spare part, spitting out an exawatt interlaced pulse plan like it was nothing. Her mouth does something complicated — not quite a smile, not quite a frown. Whatever it is, she files it away somewhere I can't see.
 
-    And I still look unhappy — "But Chimp, he says no real information there, right?" — because that's the truth of it, and the chimp is always the first voice in my head, and she can hear me deferring to it before I even finish the sentence.
+    "But Chimp, he says no real information there, right?" I say, and I can feel the deferral happening before I even finish the sentence. The chimp is always the first voice in my head. She hears it too — I can see her jaw tighten, just slightly, the way it does when she's angry at something she can't quite name.
 
-    She takes my silence for amnesia. "Too simple, remember? Simple click train."
+    "Too simple, remember? Simple click train," she says, and her voice is careful now, controlled, the way you talk to someone you're trying not to lose.
 
     I shake my head. There's more information in that signal than the chimp can imagine. I can feel it in the pattern the way you feel a draft in a sealed room: somewhere in this ship, something is not closed off that should be. And the last thing I need is for her to start looking at me like I'm the smart one, or worse, like I'm one of *them*.
 
@@ -486,7 +484,7 @@ mind:
 
     DHF428 blinks at her from the center of the lounge: Stop. Stop. Stop.
 
-    Maybe. Or maybe the chimp's right, maybe it's pure physiology. Maybe this endless cycle carries no more intelligence than the beating of a heart. But there's a pattern inside the pattern, some kind of flicker in the blink. It makes her brain itch. I can see it happening from where I'm standing at the edge of the commons, watching her watch the star.
+    Maybe. Or maybe the chimp's right, maybe it's pure physiology. Maybe this endless cycle carries no more intelligence than the beating of a heart. But there's a pattern inside the pattern, some kind of flicker in the blink. I can see it happening from where I'm standing at the edge of the commons: her eyes have stopped tracking the numbers and started tracking something else, something under the surface of the signal, and she hasn't moved in a long time.
 
     "Slow the time-series," she commands. "By a hundred."
 
@@ -496,7 +494,7 @@ mind:
 
     Chromatophores, the chimp called them. But they're not all opening and closing at once. The darkness moves across the membrane in waves.
 
-    A word pops into her head: latency. I know the word too. I've always known the word. It's one of the things the chimp taught me that it never explained why.
+    She goes quiet for a moment, staring at the tank, and then: "Latency." The word comes out slow, like she's testing its weight. I know the word too. I've always known the word. It's one of the things the chimp taught me that it never explained why.
 
     "Chimp. Those waves of pigment. How fast are they moving?"
 
@@ -504,7 +502,7 @@ mind:
 
     The speed of a passing thought.
 
-    And if this thing does think, it'll have logic gates, synapses — it's going to be a net of some kind. And if the net's big enough, there's an I in the middle of it. Just like her. Just like me. Just like the chimp. (Which is why she educated herself on the subject, back in the early tumultuous days of their relationship. Know your enemy and all that.)
+    And if this thing does think, it'll have logic gates, synapses — it's going to be a net of some kind. And if the net's big enough, there's an I in the middle of it. Just like her. Just like me. Just like the chimp. She says something under her breath — I can't make out the words, but her hand is flat against the tank's edge and her knuckles are white.
 
     The thing about I is, it only exists within a tenth-of-a-second of all its parts. When you get spread too thin — when someone splits your brain down the middle, say, chops the fat pipe so the halves have to talk the long way around; when the neural architecture diffuses past some critical point and signals take just that much longer to pass from A to B — the system, well, decoheres. The two sides of your brain become different people with different tastes, different agendas, different senses of themselves.
 
@@ -673,13 +671,11 @@ mind:
     [Read the trace before you shout back]({{ 'trace'|explore }})
 trace:
   body: |
-    {% if perspective == 'pink' %}She doesn't shout back right away. There's time — ten million corsecs of it — and she's never been good at doing a thing in a hurry when the alternative is to do it forever. So she sits with the trace, the way I used to sit with problems before the old days, when problems were small enough to hold in my hands.
+    {% if perspective == 'pink' %}She doesn't shout back right away. There's time — ten million corsecs of it — and I've watched her long enough to know she never does a thing in a hurry when the alternative is to do it forever. So she sits with the trace, staring at it the way you stare at a lock you're trying to pick: patient, still, all of her attention in her hands.
 
     I stay in the tank beside her while she does it, because no one told me to go anywhere and the chimp hasn't spoken since the last number came back. Spacing on a log-linear increase, cycling every 92.5 corsecs. Each cycle opens at 13.2 clicks per corsec and degrades — the gaps widen, the rhythm slackens, each repetition a little farther from the last. Not accelerating. A deceleration curve, the way a thing slows as it comes to rest.
 
-    And here's the thing the chimp won't do for her: decide what a slowing-down is *for*. She's got three readings in her head and no instrument that can tell them apart. I can feel her weighing them, one against the other, the way you weigh a stone in your palm to guess its depth underwater.
-
-    The chimp offers its own verdict, the very voice of calm reason: "Most cyclic emanations from living sources are simple biorhythms. Not intelligent signals." As if she hadn't heard it before. As if biorhythm were a word that settles anything. And the chimp's confidence doesn't count as an instrument.
+    The chimp offers its own verdict, the very voice of calm reason: "Most cyclic emanations from living sources are simple biorhythms. Not intelligent signals." She doesn't answer it. She just keeps watching the trace, her thumb moving along the edge of the tank in slow, measured passes — the way she does when she's working through something and doesn't want to say it out loud yet.
 
     I've already decided what it is, and I keep my mouth shut about it. Slowing toward zero. A countdown. It's asking to stop. I don't say it out loud — she'll decide for herself what the trace means, and that's her call, not mine. So I sit with it while she sits with it. The trace runs under both of us like a river we keep dipping our hands into, cold and patient.
     {% else %}I don't shout back right away. There's time — ten million corsecs of it — and I've never been good at doing a thing in a hurry when the alternative is to do it forever. So I sit with the trace, the way I used to sit with a problem before the old days, when problems were small enough to hold in my hands.
@@ -711,7 +707,7 @@ crypt:
 
     She washes the rotten-egg stench from her hair and steps into Eriophora's silent cathedral hallways. Sure enough the enemy waits in the darkness, turns the lights on as she approaches, shuts them off behind her — but it does not break the silence. Not yet. The war has gone cold; she just goes through the motions now, rattling her chains like an old married multiplet resigned to hating each other to the end of time. After all the moves and countermoves, the truth is they need each other.
 
-    She treats herself to a gratuitous meal in the starbow commons. Three hours after coming back to life, she calls up the forward feeds. DHF428 blinks at her from the center of the lounge: *Stop. Stop. Stop.* Maybe it's pure physiology. Maybe this endless cycle carries no more intelligence than the beating of a heart. But there's a pattern inside the pattern, some flicker in the blink. It makes her brain itch.
+    She treats herself to a gratuitous meal in the starbow commons. Three hours after coming back to life, she calls up the forward feeds. DHF428 blinks at her from the center of the lounge: *Stop. Stop. Stop.* Maybe it's pure physiology. Maybe this endless cycle carries no more intelligence than the beating of a heart. But there's a pattern inside the pattern, some flicker in the blink — and I can see her lean forward into it, the way she does when something has caught her attention and won't let go.
 
     {% if lean == 'heart' %}I find I'm not afraid of it, which is the part that frightens me. She wants to know what it wants. I want it to want something back. We are two people on this ship who have looked at the same star for ten months, and neither of us has been able to stop looking.{% else %}I find I can't stop calculating it either, which is the part that frightens me. Every reading ends the same way: a thing with enough power to end the mission, sitting in her flight path, and no variable in the model for what it might do next. She keeps asking the chimp questions that have no answers. I keep answering them before she asks.{% endif %}
     {% else %}I shout back. No reason not to. And now I die again, because what's the point of staying up late? Whether or not this vast entity harbors real intelligence, our echo won't reach it for ten million corsecs — another ten, at the earliest, before we receive any reply. Might as well hit the crypt in the meantime. Shut down all desires and misgivings. Conserve whatever life I have left for moments that matter.
