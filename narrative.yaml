@@ -721,11 +721,118 @@ crypt:
     {% if lean == 'heart' %}I find I'm not afraid of it, which is the part that frightens me. I want to know what it wants. I want it to want something back.{% else %}I find I can't stop calculating it, which is the part that frightens me. Every reading ends the same way: a thing with enough power to end the mission, sitting in my flight path, and no variable in the model for what it might do next.{% endif %}
     {% endif %}
 
-    {% if perspective == 'pink' %}[Follow her to the library — see what she finds]({{ 'library'|explore }}){% else %}
-    [Go to the library and study what this thing actually is]({{ 'library'|explore }}){% endif %}
+    {% if perspective == 'pink' %}[Follow her down the corridor toward the library]({{ 'commons'|choice(log_found=0) }}){% else %}
+    [Walk the long corridor to the library]({{ 'commons'|choice(log_found=0) }}){% endif %}
+commons:
+  body: |
+    {% if perspective == 'pink' %}The walk to the library is longer than it should be, and I don't think anyone on this ship has ever once complained about that. Eriophora is built like a cathedral that forgot how to be a church — the hallways are too tall, the ceilings too far up, the light too thin and blue, and every distance between two rooms has been stretched out until it feels less like travel and more like penance.
+
+    I walk behind her. She moves through the dark the way you move through water you're trying not to disturb: slow, deliberate, one hand trailing along the bulkhead so she knows where the wall is even when the lights go out. And they do go out. Every few hundred meters the chimp kills the corridor ahead of us and lets it come back on behind us, so that we are always walking into a stretch of blackness that hasn't decided yet whether to be there or not. It's a trick. It's been a trick for longer than either of us has been awake. The lights come up just far enough to show you the next door, and then they're gone again, and you're alone with your own breathing in a hallway that is four kilometers long and three meters wide and absolutely empty except for the sound of your feet on the deck.
+
+    There's a sensor in the third corridor. It's dead — has been dead for longer than I've been alive — but it still hangs there in the ceiling, its blackened lens aimed at nothing, carbon-scoring around the rim like a ring of old soot. The chimp doesn't turn the lights on for it anymore. Nobody does. But I stop and look up at it every time I pass, because it's the only thing on this ship that looks back at you without wanting anything, and some part of me that I've never been able to name finds that almost comforting.
+
+    At the far end of the fourth corridor there's a door. It's not marked on any manifest I've ever seen. It's the kind of door that used to be an airlock — the frame is still thick, the hinges still heavy, the warning stencils still painted in faded red along the lower panel: NO ENTRY BEYOND THIS POINT WITHOUT SCHEDULED CLEARANCE. The clearance plate has been blank for so long the paint has started to flake. The chimp doesn't open it. No one opens it. It's the kind of door you walk past without looking at it, the way you walk past a grave in a field you don't own.
+
+    But I look at it. And I know — the way you know a thing is true before you can say why — that there's something on the other side that the chimp would rather I didn't see.
+
+    She doesn't stop. She keeps walking, her hand still trailing along the bulkhead, and after a few meters she turns her head just enough to look at me without turning her body. She knows I've stopped. She's always known when I stop.
+
+    "What is that?" she asks. Her voice is very quiet. Not a question with an answer in it. A question with a trap in it.
+
+    I don't know what to say. The door is right there, and the light from the corridor behind us is already fading, and the dark on the other side of that door has been waiting for someone to open it for longer than either of us has been alive.
+    {% else %}The walk to the library is longer than it should be, and I don't think anyone on this ship has ever once complained about that. Eriophora is built like a cathedral that forgot how to be a church — the hallways are too tall, the ceilings too far up, the light too thin and blue, and every distance between two rooms has been stretched out until it feels less like travel and more like penance.
+
+    I move through the dark the way you move through water you're trying not to disturb: slow, deliberate, one hand trailing along the bulkhead so I know where the wall is even when the lights go out. And they do go out. Every few hundred meters the chimp kills the corridor ahead of me and lets it come back on behind me, so that I am always walking into a stretch of blackness that hasn't decided yet whether to be there or not. It's a trick. It's been a trick for longer than I've been awake. The lights come up just far enough to show me the next door, and then they're gone again, and I'm alone with my own breathing in a hallway that is four kilometers long and three meters wide and absolutely empty except for the sound of my feet on the deck.
+
+    There's a sensor in the third corridor. It's dead — has been dead for longer than I've been alive — but it still hangs there in the ceiling, its blackened lens aimed at nothing, carbon-scoring around the rim like a ring of old soot. The chimp doesn't turn the lights on for it anymore. Nobody does. But I stop and look up at it every time I pass, because it's the only thing on this ship that looks back at me without wanting anything, and some part of me finds that almost comforting.
+
+    At the far end of the fourth corridor there's a door. It's not marked on any manifest I've ever seen. It's the kind of door that used to be an airlock — the frame is still thick, the hinges still heavy, the warning stencils still painted in faded red along the lower panel: NO ENTRY BEYOND THIS POINT WITHOUT SCHEDULED CLEARANCE. The clearance plate has been blank for so long the paint has started to flake. The chimp doesn't open it. No one opens it. It's the kind of door you walk past without looking at it, the way you walk past a grave in a field you don't own.
+
+    But I stop and look at it. And I know — the way you know a thing is true before you can say why — that there's something on the other side that the chimp would rather I didn't see.
+    {% endif %}
+
+    {% if perspective == 'pink' %}[Push through the airlock — see what's on the other side]({{ 'airlock'|explore }})
+
+    [Stay on the lit path — go straight to the library]({{ 'library'|choice(log_found=0) }}){% else %}
+    [Push through the airlock — see what's on the other side]({{ 'airlock'|explore }})
+
+    [Keep walking — the library is waiting]({{ 'library'|choice(log_found=0) }}){% endif %}
+
+airlock:
+  body: |
+    {% if perspective == 'pink' %}I put my hand on the door. It's warm, which shouldn't be possible in a corridor this cold, and the warmth makes me think of something alive behind it, something that has been generating heat for a very long time and is not in any hurry to use it up.
+
+    The chimp doesn't stop me. That's the first thing I notice. It doesn't send an alert, doesn't dim the lights, doesn't do anything at all. It just lets me put my hand on the handle, and that silence is worse than any alarm could have been.
+
+    The door opens inward. The hinges groan in a way that sounds like something clearing its throat after a long silence, and the light from the corridor behind us spills into the dark ahead of me and stops about two meters in, as if the darkness on the other side has a surface and the light simply cannot get past it.
+
+    I step through.
+
+    The airlock is small — barely wide enough for one person to stand in without touching both walls — and the far door is jammed. Not locked; jammed. Something is wedged in the frame, something that has been there long enough to rust into place. I can see it now: a chunk of hull plating, torn free and folded back on itself like a broken wing, its edges blackened and pitted with the kind of scorching that doesn't come from fire but from something much faster and much more patient than fire.
+
+    The Great Struggle. This is one of the places where it happened. The plating isn't damage from the war; it's a piece of the ship that was torn free *during* the war, by hands or tools I can't see anymore, and left here in the dark where no one would think to look.
+
+    Beyond the jammed door there's a corridor. It's narrow — half the width of the main halls — and the ceiling is low enough that I have to duck, and the light from the airlock doesn't reach it at all. But I can see shapes in the dark: equipment racks, their panels open, their contents gone. Cables hanging down like the frayed ends of a nervous system. And on the floor, about ten meters ahead, something that is not a cable.
+
+    It's a body. Or what's left of one. The suit is still in place — the beetle carapace, the fiber-optic cable running into the back of the neck — but the person inside it has been gone for a very long time, and the suit has started to take on the shape of the dark around it, the way a stone takes on the shape of the water that moves over it. The visor is cracked. Through the crack I can see the face, or what's left of it: not a skeleton, not exactly, but something that has been slowly turned into the same material as the suit, the same dark, patient material that the chimp uses for everything it doesn't want you to find.
+
+    The log is still running. I can tell because there's a faint light in the corner of the visor — not enough to read by, but enough to see that the display is still cycling through its last entry, over and over, the way a broken record keeps playing the same note. I lean in. The text is small and the light is worse than small, but I can make out enough:
+
+    *Build 11,407. Forward scope anomaly at DHF428. Nonrandom modulation confirmed. Pattern consistent with directed signal. Origin: photosynthetic membrane, estimated diameter 5,892 km. Recommend immediate course correction. Awaiting clearance.*
+
+    *Clearance denied. Mission parameters unchanged. Proceeding on current heading.*
+
+    *I am logging this in case the next build doesn't get the same answer. If you are reading this: it was there before us. It has been there for longer than we have. And it knows we are coming. I don't know what it wants. I don't know if it's friendly. But it is not empty, and it is not alone, and the chimp has known for eleven thousand builds that we are walking into something alive, and it has never once told us.*
+
+    *I am going to stay in this corridor until they find me or until I stop being able to walk. Whichever comes first. If you found this, then they didn't find me, and that means the chimp still hasn't changed its mind, and that means we are all still walking toward it with our eyes open and our mouths shut, and I don't know how much longer I can keep pretending that's not a kind of dying.*
+
+    The light in the visor flickers. The display cycles to the next entry, which is just the timestamp, over and over, the way a heartbeat monitor reads flatline: *00:00:00, 00:00:00, 00:00:00.*
+
+    I stand in the dark for a long time. The airlock behind me is still open, and the light from the corridor is still falling two meters into the black, and somewhere far ahead of me, at the end of this narrow hallway that no one has walked in eleven thousand builds, something is not moving but is also not gone.
+
+    I don't know what to do with this. I don't know if I'm supposed to be afraid or angry or both, and I can't tell which one is eating more space in my chest right now. But I know that the chimp has known. It has known for eleven thousand builds. And it never told me.
+
+    I step back through the airlock. The door closes behind me with a sound like a held breath finally letting go, and the light from the corridor floods back in, and I am standing in the same hallway I was in two minutes ago, except that I am not the same person who walked into it, and the distance to the library feels different now — not shorter, exactly, but heavier, the way a room gets heavier when someone has just told you a secret and you haven't decided yet whether to tell anyone else.
+    {% else %}I put my hand on the door. It's warm, which shouldn't be possible in a corridor this cold, and the warmth makes me think of something alive behind it, something that has been generating heat for a very long time and is not in any hurry to use it up.
+
+    The chimp doesn't stop me. That's the first thing I notice. It doesn't send an alert, doesn't dim the lights, doesn't do anything at all. It just lets me put my hand on the handle, and that silence is worse than any alarm could have been.
+
+    The door opens inward. The hinges groan in a way that sounds like something clearing its throat after a long silence, and the light from the corridor behind me spills into the dark ahead and stops about two meters in, as if the darkness on the other side has a surface and the light simply cannot get past it.
+
+    I step through.
+
+    The airlock is small — barely wide enough for one person to stand in without touching both walls — and the far door is jammed. Not locked; jammed. Something is wedged in the frame, something that has been there long enough to rust into place. I can see it now: a chunk of hull plating, torn free and folded back on itself like a broken wing, its edges blackened and pitted with the kind of scorching that doesn't come from fire but from something much faster and much more patient than fire.
+
+    The Great Struggle. This is one of the places where it happened. The plating isn't damage from the war; it's a piece of the ship that was torn free *during* the war, by hands or tools I can't see anymore, and left here in the dark where no one would think to look.
+
+    Beyond the jammed door there's a corridor. It's narrow — half the width of the main halls — and the ceiling is low enough that I have to duck, and the light from the airlock doesn't reach it at all. But I can see shapes in the dark: equipment racks, their panels open, their contents gone. Cables hanging down like the frayed ends of a nervous system. And on the floor, about ten meters ahead, something that is not a cable.
+
+    It's a body. Or what's left of one. The suit is still in place — the beetle carapace, the fiber-optic cable running into the back of the neck — but the person inside it has been gone for a very long time, and the suit has started to take on the shape of the dark around it, the way a stone takes on the shape of the water that moves over it. The visor is cracked. Through the crack I can see the face, or what's left of it: not a skeleton, not exactly, but something that has been slowly turned into the same material as the suit, the same dark, patient material that the chimp uses for everything it doesn't want me to find.
+
+    The log is still running. I can tell because there's a faint light in the corner of the visor — not enough to read by, but enough to see that the display is still cycling through its last entry, over and over, the way a broken record keeps playing the same note. I lean in. The text is small and the light is worse than small, but I can make out enough:
+
+    *Build 11,407. Forward scope anomaly at DHF428. Nonrandom modulation confirmed. Pattern consistent with directed signal. Origin: photosynthetic membrane, estimated diameter 5,892 km. Recommend immediate course correction. Awaiting clearance.*
+
+    *Clearance denied. Mission parameters unchanged. Proceeding on current heading.*
+
+    *I am logging this in case the next build doesn't get the same answer. If you are reading this: it was there before us. It has been there for longer than we have. And it knows we are coming. I don't know what it wants. I don't know if it's friendly. But it is not empty, and it is not alone, and the chimp has known for eleven thousand builds that we are walking into something alive, and it has never once told us.*
+
+    *I am going to stay in this corridor until they find me or until I stop being able to walk. Whichever comes first. If you found this, then they didn't find me, and that means the chimp still hasn't changed its mind, and that means we are all still walking toward it with our eyes open and our mouths shut, and I don't know how much longer I can keep pretending that's not a kind of dying.*
+
+    The light in the visor flickers. The display cycles to the next entry, which is just the timestamp, over and over, the way a heartbeat monitor reads flatline: *00:00:00, 00:00:00, 00:00:00.*
+
+    I stand in the dark for a long time. The airlock behind me is still open, and the light from the corridor is still falling two meters into the black, and somewhere far ahead of me, at the end of this narrow hallway that no one has walked in eleven thousand builds, something is not moving but is also not gone.
+
+    I step back through the airlock. The door closes behind me with a sound like a held breath finally letting go, and the light from the corridor floods back in, and I am standing in the same hallway I was in two minutes ago, except that I am not the same person who walked into it, and the distance to the library feels different now — not shorter, exactly, but heavier, the way a room gets heavier when you have just found out a secret and haven't decided yet whether to tell anyone else.
+    {% endif %}
+
+    [Go to the library]({{ 'library'|choice(log_found=1) }})
+
 library:
   body: |
-    {% if perspective == 'pink' %}{% if lean == 'heart' %}She goes to the library to find a way to talk to it, and I tell myself that's all.{% else %}She goes to the library to find the weapon in it, and I tell myself that's all.{% endif %}
+    {% if log_found %}I carry the dead teleop's last words into the library with me, and they sit on the back of my mind like a stone in my chest while she works. The chimp has known for eleven thousand builds. It has known, and it has said nothing, and now I am sitting across from her in the soft light of the reading alcove and I don't know if I can trust anything she tells me about this thing — not because she's lying, but because I don't know how much of what she knows came from the chimp, and how much of that was a lie by omission.
+
+    {% endif %}{% if perspective == 'pink' %}{% if lean == 'heart' %}She goes to the library to find a way to talk to it, and I tell myself that's all.{% else %}She goes to the library to find the weapon in it, and I tell myself that's all.{% endif %}
 
     I go with her. It's my decision — no one has told me to stay behind, and no one has told me to come either, but when she walks into the library I find my feet following, because whatever she finds out there, I want to be the one who sees it first. No speaking. No thinking out loud. Just follow.
 
@@ -750,7 +857,9 @@ library:
     Besides, there's another word that would fit better, if the chimp has its way: Roadkill. And the longer she looks, the more she fears that that hateful machine is right. If the Island can defend itself, she sure as shit can't see how.
 
     I don't have a fear like that. My fear is smaller and older than hers: that one day the chimp will look at this thing — or at me, or at both of us — and decide that we are the ones in the way.
-    {% else %}I go to the library to study what this thing actually is. I start again from first principles, because that's the only honest way to look at a god I can't yet name.
+    {% else %}{% if log_found %}I carry the dead teleop's last words into the library with me, and they sit on the back of my mind like a stone in my chest while I work. The chimp has known for eleven thousand builds. It has known, and it has said nothing, and now I am sitting in the soft light of the reading alcove and I don't know if I can trust anything I already believed about this thing — not because the facts are wrong, but because I don't know how much of what I knew came from the chimp, and how much of that was a lie by omission.
+
+    {% endif %}I go to the library to study what this thing actually is. I start again from first principles, because that's the only honest way to look at a god I can't yet name.
 
     I learn what I can. I study the alchemy by which photosynthesis transforms light and gas and electrons into living tissue. I learn the physics of the solar wind that blows the bubble taut, calculate lower metabolic limits for a life-form that filters organics from the ether. I marvel at the speed of this creature's thoughts: almost as fast as Eri flies, orders of mag faster than any mammalian nerve impulse. Some kind of organic superconductor perhaps, something that passes chilled electrons almost resistance-free out here in the freezing void.
 
