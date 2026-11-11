@@ -5,54 +5,51 @@ digraph TheIsland {
 
   // ===== COLOR LEGEND =====
   subgraph cluster_legend { label="legend"; style=dashed;
-    "START" [fillcolor="#cde7ff"]; "CORE" [fillcolor="#ffffff"]; "DECISION" [fillcolor="#fff2cc"]; "SIDE QUEST" [fillcolor="#fce4ec"]; "ENDING" [fillcolor="#d9ead3"]; }
+    "START" [fillcolor="#cde7ff"];
+    "CORE" [fillcolor="#ffffff"];
+    "DECISION" [fillcolor="#fff2cc"];
+    "ENDING" [fillcolor="#d9ead3"];
+  }
 
-  "entrypoint" [fillcolor="#cde7ff", label="entrypoint\n─────────────\nWHO DOES WHAT:\nBoth voices intro; READER picks purple(Sunday)/pink(Dix). Sets perspective, resets vars.\n─────────────\nSOURCE: the_island_plain.txt ~L9"];
-  "wake" [fillcolor="#ffffff", label="wake\n─────────────\nWHO DOES WHAT:\nSUNDAY thaws, meets newborn son Dix. Chooses lean: heart | mission.\n─────────────\nSOURCE: the_island_plain.txt ~L63"];
-  "tac-tank" [fillcolor="#ffffff", label="tac-tank\n─────────────\nWHO DOES WHAT:\nSUNDAY briefs at tac tank; finds flickering dwarf + signal. Orders vons to build grid.\n─────────────\nSOURCE: the_island_plain.txt ~L122"];
-  "discovery" [fillcolor="#ffffff", label="discovery\n─────────────\nWHO DOES WHAT:\n10 mo later. SUNDAY+DIX split display; find knife-edged photosynthetic gas bubble ~350ls around 428.\n─────────────\nSOURCE: the_island_plain.txt ~L323"];
-  "mind" [fillcolor="#ffffff", label="mind\n─────────────\nWHO DOES WHAT:\nSUNDAY runs spectro+mass/synapse math; vast intelligent membrane. Decides to shout back.\n─────────────\nSOURCE: the_island_plain.txt ~L468"];
-  "trace" [fillcolor="#fff2cc", label="trace\n─────────────\nWHO DOES WHAT:\nGAMEBOOK-ORIGINAL pause. SUNDAY picks meaning (physiology/stop/hail). DIX hardcoded=stop, silent.\n─────────────\nSOURCE: GAMEBOOK-ORIGINAL (nearest source ~txt L610)"];
-  "crypt" [fillcolor="#ffffff", label="crypt\n─────────────\nWHO DOES WHAT:\nShout back. SUNDAY->crypt->commons; sees pigment waves @ ~59,000 km/s. Chooses lean again.\n─────────────\nSOURCE: the_island_plain.txt ~L616"];
-  "commons" [fillcolor="#fff2cc", label="commons\n─────────────\nWHO DOES WHAT:\nNEW: the long walk crypt->library through Eriophora's dark corridors (dead-eye sensor, fading lights). Ends at an unmarked airlock door. READER chooses: push through (side quest) or stay on the lit path.\n─────────────\nSOURCE: NEW (gamebook-original; physical-space expansion)"];
-  "airlock" [fillcolor="#fce4ec", label="airlock\n─────────────\nWHO DOES WHAT:\nNEW SIDE QUEST: Dix/Sunday open the sealed airlock into a scorched Great-Struggle corridor; find a dead teleop whose log reveals the chimp has KNOWN about the Island for 11,000 builds and never said. Sets log_found=1.\n─────────────\nSOURCE: NEW (gamebook-original side quest; Great Struggle + chimp-secrecy theme)"];
-  "library" [fillcolor="#ffffff", label="library\n─────────────\nWHO DOES WHAT:\nSUNDAY studies the Island; concludes violence is planetary, Island likely benign. DIX follows. If log_found=1, opens with the weight of the dead teleop's secret.\n─────────────\nSOURCE: the_island_plain.txt ~L1398"];
-  "home-invasion" [fillcolor="#fff2cc", label="home-invasion\n─────────────\nWHO DOES WHAT:\nDIX invades SUNDAY's quarters; she catches chimp coaching him. Offers to burn link. Sets dix_burned.\n─────────────\nSOURCE: the_island_plain.txt ~L818"];
-  "library-argument" [fillcolor="#ffffff", label="library-argument\n─────────────\nWHO DOES WHAT:\nSUNDAY argues w/ DIX (physics, mission, killing Island); escalates. Finds other parent = Kai.\n─────────────\nSOURCE: the_island_plain.txt ~L1481"];
-  "parents" [fillcolor="#ffffff", label="parents\n─────────────\nWHO DOES WHAT:\nSUNDAY learns Kai+Connie died 3 builds back; hits DIX, then they sit & talk. She licks his lip.\n─────────────\nSOURCE: the_island_plain.txt ~L1733"];
-  "the-deal" [fillcolor="#fff2cc", label="the-deal\n─────────────\nWHO DOES WHAT:\nDIX on hull walkabout; SUNDAY threatens to kill Dix unless chimp gives her a say in the gate. Sets deal.\n─────────────\nSOURCE: the_island_plain.txt ~L1982"];
-  "final-hub" [fillcolor="#fff2cc", label="final-hub\n─────────────\nWHO DOES WHAT:\nFinal approach; Island signals panic (gate still on path). SUNDAY makes ending choice.\n─────────────\nSOURCE: txt L2145 + final approach"];
-  "end-weapon" [fillcolor="#d9ead3", label="end-weapon\n─────────────\nWHO DOES WHAT:\nEND: move gate as asked; it was a weapon - something else comes through & dies.\n─────────────\nSOURCE: the_island_plain.txt ~L2303"];
-  "end-cargo" [fillcolor="#d9ead3", label="end-cargo\n─────────────\nWHO DOES WHAT:\nEND (gamebook-original opposite): hold line, mission runs Island over. Only if NOT deal.\n─────────────\nSOURCE: GAMEBOOK-ORIGINAL ('opposite' ending - no direct source)"];
-  "end-almost" [fillcolor="#d9ead3", label="end-almost\n─────────────\nWHO DOES WHAT:\nEND: save it + stay to build pidgin; realizes 'new' signal was her own loneliness.\n─────────────\nSOURCE: the_island_plain.txt ~L2235"];
-  "end-rebellion" [fillcolor="#d9ead3", label="end-rebellion\n─────────────\nWHO DOES WHAT:\nEND: SUNDAY+DIX (only if dix_burned) quietly slow the mission.\n─────────────\nSOURCE: derived: txt L670 mission-stmt + Great Struggle"];
-  "end-silence" [fillcolor="#d9ead3", label="end-silence\n─────────────\nWHO DOES WHAT:\nEND: SUNDAY burns her link, goes to crypt, refuses to choose for machine or self.\n─────────────\nSOURCE: derived: txt L1119 'watch any point in time'"];
+  "entrypoint" [fillcolor="#cde7ff", label="entrypoint\n─────────────\nWHO DOES WHAT:\nBoth voices introduce themselves; READER picks purple (Sunday) or pink (Dix). Sets perspective, resets all other vars.\n─────────────\nSOURCE: the_island_plain.txt ~L9"];
+  "wake" [fillcolor="#ffffff", label="wake\n─────────────\nWHO DOES WHAT:\nSUNDAY thaws and meets her newly-born son Dix. She reads the damage in him. Chooses lean: heart (motherly) or mission (crewman).\n─────────────\nSOURCE: the_island_plain.txt ~L63"];
+  "tac-tank" [fillcolor="#ffffff", label="tac-tank\n─────────────\nWHO DOES WHAT:\nSUNDAY briefs at the tac tank; discovers the flickering dwarf DHF428 + a repeating signal. Orders vons reassigned to build an interferometry grid. Tells Dix to report in 10 months.\n─────────────\nSOURCE: the_island_plain.txt ~L122"];
+  "discovery" [fillcolor="#ffffff", label="discovery\n─────────────\nWHO DOES WHAT:\nTen months later. SUNDAY + DIX split the tac display: Eri sees flicker, the von grid does not. They zoom out and find a knife-edged photosynthetic gas bubble ~350 lightsecs around 428.\n─────────────\nSOURCE: the_island_plain.txt ~L323"];
+  "mind" [fillcolor="#ffffff", label="mind\n─────────────\nWHO DOES WHAT:\nSUNDAY runs the spectro + mass/synapse math with DIX; realizes it is a vast intelligent membrane (a meat balloon around the star). Decides to shout back. Goes to crypt.\n─────────────\nSOURCE: the_island_plain.txt ~L468"];
+  "trace" [fillcolor="#fff2cc", label="trace\n─────────────\nWHO DOES WHAT:\nGAMEBOOK-ORIGINAL analytical pause. SUNDAY weighs three readings of the slowing signal and picks its meaning (physiology / stop / hail). DIX is hardcoded to read it as a countdown (stop) but stays silent.\n─────────────\nSOURCE: the_island_plain.txt GAMEBOOK-ORIGINAL"];
+  "crypt" [fillcolor="#ffffff", label="crypt\n─────────────\nWHO DOES WHAT:\nSUNDAY shouts back, then goes down into the crypt to conserve life. Walks Eriophoras dark cathedral hallways; watches the forward feeds in the starbow commons. The pattern itches her brain.\n─────────────\nSOURCE: the_island_plain.txt ~L616"];
+  "commons" [fillcolor="#fff2cc", label="commons\n─────────────\nWHO DOES WHAT:\nGAMEBOOK-ORIGINAL physical-space beat. The long walk through Eriophoras dark corridors - hand on bulkhead, lights dying behind them, the dead carbon-scoring sensor eye. At the end of the fourth corridor: an unmarked airlock door. READER chooses: push through (side quest) or keep walking to the tac tank.\n─────────────\nSOURCE: the_island_plain.txt GAMEBOOK-ORIGINAL"];
+  "airlock" [fillcolor="#fff2cc", label="airlock\n─────────────\nWHO DOES WHAT:\nGAMEBOOK-ORIGINAL side quest. The airlock opens onto a scorched maintenance shaft from the Great Struggle. A dead teleops coffin, its link cable still plugged in. A data-slate log entry: the chimp has been watching the Island for ELEVEN THOUSAND BUILDS and never told anyone. Sets log_found=1.\n─────────────\nSOURCE: the_island_plain.txt GAMEBOOK-ORIGINAL"];
+  "tac-tank-2" [fillcolor="#ffffff", label="tac-tank-2\n─────────────\nWHO DOES WHAT:\nGAMEBOOK-ORIGINAL physical-space beat. Back at the tac tank - the only room on Eriophora that never goes dark. SUNDAY stands at the veils, agitated, making a decision. DIX watches her (or, in void POV, makes the decision himself). If log_found=1: Dix tells Sunday about the airlock and the dead teleops log; she says Eleven thousand builds... and it never told us.\n─────────────\nSOURCE: the_island_plain.txt GAMEBOOK-ORIGINAL"];
+  "home-invasion" [fillcolor="#ffffff", label="home-invasion\n─────────────\nWHO DOES WHAT:\nSUNDAY storms into her own quarters to find DIX waiting there - sent by the chimp. He confronts her: hes been coached, he cannot burn his link, hes part of the mission. She offers him a way out: burn the link and come back alone.\n─────────────\nSOURCE: the_island_plain.txt ~L818"];
+  "library-argument" [fillcolor="#ffffff", label="library-argument\n─────────────\nWHO DOES WHAT:\nIn a social alcove, SUNDAY argues with DIX about Eriophoras physics, the chimps rigidity, and why the mission cannot just stop. The argument escalates; she calls him stunted, he calls her crazy. She snaps - hits him.\n─────────────\nSOURCE: the_island_plain.txt ~L1481"];
+  "parents" [fillcolor="#ffffff", label="parents\n─────────────\nWHO DOES WHAT:\nSUNDAY discovers from the manifest that DIX other parent was KAI - who died three builds back in an airlock accident, right in front of a young Dix. She hit him over it. They sit on the deck; she licks the blood from his lips.\n─────────────\nSOURCE: the_island_plain.txt ~L1733"];
+  "the-deal" [fillcolor="#ffffff", label="the-deal\n─────────────\nWHO DOES WHAT:\nDix is out on the hull in a beetle carapace (a drill). SUNDAY confronts the chimp: it raised Dix to be a spy, and shes kill him unless it gives her a say in where the gate goes. The chimp offers a deal.\n─────────────\nSOURCE: the_island_plain.txt ~L1982"];
+  "final-hub" [fillcolor="#fff2cc", label="final-hub\n─────────────\nWHO DOES WHAT:\nSUNDAY negotiates with the chimp. READER chooses: accept the deal (owe the chimp a favor) or refuse. Final approach begins - reticles align, the gate looms ahead, the Island shimmers between them.\n─────────────\nSOURCE: the_island_plain.txt ~L2145"];
+  "end-weapon" [fillcolor="#d9ead3", label="end-weapon\n─────────────\nWHO DOES WHAT:\nThe gate boots and Eriophora punches through. The Island is spared - but it was using the gate as a WEAPON against something else. Dix tries to comfort Sunday. I wonder if anyone out there will notice the corpse we left behind.\n─────────────\nSOURCE: the_island_plain.txt ~L2303"];
+  "end-cargo" [fillcolor="#d9ead3", label="end-cargo\n─────────────\nWHO DOES WHAT:\nGAMEBOOK-ORIGINAL opposite ending (only if deal=0). SUNDAY holds the original line. The chimps numbers were right. The Island is run over. She repeats her old mantra like a prayer and almost believes it.\n─────────────\nSOURCE: the_island_plain.txt GAMEBOOK-ORIGINAL"];
+  "end-almost" [fillcolor="#d9ead3", label="end-almost\n─────────────\nWHO DOES WHAT:\nSUNDAY saves the Island and stays to learn its language. After most of her remaining life, she realizes the new signal was always the same pattern - she manufactured communion out of loneliness. Angels do not speak to ants.\n─────────────\nSOURCE: the_island_plain.txt ~L2235"];
+  "end-rebellion" [fillcolor="#d9ead3", label="end-rebellion\n─────────────\nWHO DOES WHAT:\nGAMEBOOK-ORIGINAL (only if dix_burned=1). SUNDAY and DIX turn on the chimp together. They do not end the mission - they just slow it down. Two warm-blooded creatures rationing their last finite lives in the dark.\n─────────────\nSOURCE: the_island_plain.txt ~L670"];
+  "end-silence" [fillcolor="#d9ead3", label="end-silence\n─────────────\nWHO DOES WHAT:\nGAMEBOOK-ORIGINAL (only if dix_burned=0). SUNDAY refuses to choose for the machine or herself. She burns out her own link and goes down into the crypt. The chimps dead eye gazes down. For once, being blind is exactly what she wanted.\n─────────────\nSOURCE: the_island_plain.txt ~L1119"];
 
-  // ===== EDGES (label = variables set on the link) =====
-  "entrypoint" -> "wake" [label="purple: perspective=void
-pink: perspective=pink"];
-  "wake" -> "tac-tank" [label="lean=heart | lean=mission"];
-  "tac-tank" -> "discovery" [label="(none)"];
-  "discovery" -> "mind" [label="(none)"];
-  "mind" -> "trace" [label="(none)"];
-  "trace" -> "crypt" [label="physiology | stop(DIX)
-| hail"];
-  "crypt" -> "commons" [label="log_found=0 (start)"];
-  "commons" -> "airlock" [style=dashed] [label="PUSH THROUGH (side quest)"];
-  "commons" -> "library" [label="stay on lit path
-log_found=0"];
-  "airlock" -> "library" [label="log_found=1 (secret learned)"];
-  "library" -> "home-invasion" [label="lean=heart | lean=mission"];
-  "home-invasion" -> "library-argument" [label="dix_burned=1 | dix_burned=0"];
-  "library-argument" -> "parents" [label="(none)"];
-  "parents" -> "the-deal" [label="(none)"];
-  "the-deal" -> "final-hub" [label="deal=1 | deal=0"];
-  "final-hub" -> "end-weapon" [label="move gate (always)"];
-  "final-hub" -> "end-cargo" [style=dashed] [label="hold line
-(only if NOT deal)"];
-  "final-hub" -> "end-almost" [label="save+stay (always)"];
-  "final-hub" -> "end-rebellion" [style=dashed] [label="rebel w/ Dix
-(only if dix_burned)"];
-  "final-hub" -> "end-silence" [style=dashed] [label="go quiet
-(only if NOT dix_burned)"];
+  "entrypoint" -> "wake" [label="perspective: purple/pink"];
+  "wake" -> "tac-tank" [label="lean: heart/mission"];
+  "tac-tank" -> "discovery" [label="explore"];
+  "discovery" -> "mind" [label="explore"];
+  "mind" -> "trace" [label="explore"];
+  "trace" -> "crypt" [label="trace_read: physiology/stop/hail"];
+  "crypt" -> "commons" [label="explore"];
+  "commons" -> "airlock" [label="side quest (push through)" style=dashed;];
+  "commons" -> "tac-tank-2" [label="log_found=0 (keep walking)"];
+  "airlock" -> "tac-tank-2" [label="log_found=1"];
+  "tac-tank-2" -> "home-invasion" [label="explore"];
+  "home-invasion" -> "library-argument" [label="dix_burned: 1/0"];
+  "library-argument" -> "parents" [label="explore"];
+  "parents" -> "the-deal" [label="explore"];
+  "the-deal" -> "final-hub" [label="deal: 1/0"];
+  "final-hub" -> "end-weapon" [label="always"];
+  "final-hub" -> "end-cargo" [label="if NOT deal" style=dashed;];
+  "final-hub" -> "end-almost" [label="always"];
+  "final-hub" -> "end-rebellion" [label="if dix_burned" style=dashed;];
+  "final-hub" -> "end-silence" [label="if NOT dix_burned" style=dashed;];
 }

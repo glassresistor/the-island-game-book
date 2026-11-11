@@ -725,7 +725,7 @@ crypt:
     [Walk the long corridor to the library]({{ 'commons'|choice(log_found=0) }}){% endif %}
 commons:
   body: |
-    {% if perspective == 'pink' %}The walk to the library is longer than it should be, and I don't think anyone on this ship has ever once complained about that. Eriophora is built like a cathedral that forgot how to be a church — the hallways are too tall, the ceilings too far up, the light too thin and blue, and every distance between two rooms has been stretched out until it feels less like travel and more like penance.
+    {% if perspective == 'pink' %}The corridor back to the bridge is longer than it should be, and I don't think anyone on this ship has ever once complained about that. Eriophora is built like a cathedral that forgot how to be a church — the hallways are too tall, the ceilings too far up, the light too thin and blue, and every distance between two rooms has been stretched out until it feels less like travel and more like penance.
 
     I walk behind her. She moves through the dark the way you move through water you're trying not to disturb: slow, deliberate, one hand trailing along the bulkhead so she knows where the wall is even when the lights go out. And they do go out. Every few hundred meters the chimp kills the corridor ahead of us and lets it come back on behind us, so that we are always walking into a stretch of blackness that hasn't decided yet whether to be there or not. It's a trick. It's been a trick for longer than either of us has been awake. The lights come up just far enough to show you the next door, and then they're gone again, and you're alone with your own breathing in a hallway that is four kilometers long and three meters wide and absolutely empty except for the sound of your feet on the deck.
 
@@ -740,7 +740,7 @@ commons:
     "What is that?" she asks. Her voice is very quiet. Not a question with an answer in it. A question with a trap in it.
 
     I don't know what to say. The door is right there, and the light from the corridor behind us is already fading, and the dark on the other side of that door has been waiting for someone to open it for longer than either of us has been alive.
-    {% else %}The walk to the library is longer than it should be, and I don't think anyone on this ship has ever once complained about that. Eriophora is built like a cathedral that forgot how to be a church — the hallways are too tall, the ceilings too far up, the light too thin and blue, and every distance between two rooms has been stretched out until it feels less like travel and more like penance.
+    {% else %}The corridor back to the bridge is longer than it should be, and I don't think anyone on this ship has ever once complained about that. Eriophora is built like a cathedral that forgot how to be a church — the hallways are too tall, the ceilings too far up, the light too thin and blue, and every distance between two rooms has been stretched out until it feels less like travel and more like penance.
 
     I move through the dark the way you move through water you're trying not to disturb: slow, deliberate, one hand trailing along the bulkhead so I know where the wall is even when the lights go out. And they do go out. Every few hundred meters the chimp kills the corridor ahead of me and lets it come back on behind me, so that I am always walking into a stretch of blackness that hasn't decided yet whether to be there or not. It's a trick. It's been a trick for longer than I've been awake. The lights come up just far enough to show me the next door, and then they're gone again, and I'm alone with my own breathing in a hallway that is four kilometers long and three meters wide and absolutely empty except for the sound of my feet on the deck.
 
@@ -753,10 +753,10 @@ commons:
 
     {% if perspective == 'pink' %}[Push through the airlock — see what's on the other side]({{ 'airlock'|explore }})
 
-    [Stay on the lit path — go straight to the library]({{ 'library'|choice(log_found=0) }}){% else %}
+    [Keep walking — head for the tac tank]({{ 'tac-tank-2'|choice(log_found=0) }}){% else %}
     [Push through the airlock — see what's on the other side]({{ 'airlock'|explore }})
 
-    [Keep walking — the library is waiting]({{ 'library'|choice(log_found=0) }}){% endif %}
+    [Keep walking — head for the tac tank]({{ 'tac-tank-2'|choice(log_found=0) }}){% endif %}
 
 airlock:
   body: |
@@ -823,68 +823,61 @@ airlock:
 
     I stand in the dark for a long time. The airlock behind me is still open, and the light from the corridor is still falling two meters into the black, and somewhere far ahead of me, at the end of this narrow hallway that no one has walked in eleven thousand builds, something is not moving but is also not gone.
 
-    I step back through the airlock. The door closes behind me with a sound like a held breath finally letting go, and the light from the corridor floods back in, and I am standing in the same hallway I was in two minutes ago, except that I am not the same person who walked into it, and the distance to the library feels different now — not shorter, exactly, but heavier, the way a room gets heavier when you have just found out a secret and haven't decided yet whether to tell anyone else.
+    I step back through the airlock. The door closes behind me with a sound like a held breath finally letting go, and the light from the corridor floods back in, and I am standing in the same hallway I was in two minutes ago, except that I am not the same person who walked into it, and the distance to the tac tank feels different now — not shorter, exactly, but heavier, the way a room gets heavier when you have just found out a secret and haven't decided yet whether to tell anyone else.
     {% endif %}
 
-    [Go to the library]({{ 'library'|choice(log_found=1) }})
+    [Head for the tac tank]({{ 'tac-tank-2'|choice(log_found=1) }})
 
-library:
+tac-tank-2:
   body: |
-    {% if log_found %}I carry the dead teleop's last words into the library with me, and they sit on the back of my mind like a stone in my chest while she works. The chimp has known for eleven thousand builds. It has known, and it has said nothing, and now I am sitting across from her in the soft light of the reading alcove and I don't know if I can trust anything she tells me about this thing — not because she's lying, but because I don't know how much of what she knows came from the chimp, and how much of that was a lie by omission.
+    {% if perspective == 'pink' %}The tac tank is the only room on this ship that never goes dark, and I don't think that's an accident. The chimp keeps it lit at all times — a soft, even glow that doesn't come from any lamp I can find but seems to rise out of the veils themselves, the way light rises out of water in deep places. It's the one room where the dark can't get in, and I think that's why she always comes back here when something is wrong.
 
-    {% endif %}{% if perspective == 'pink' %}{% if lean == 'heart' %}She goes to the library to find a way to talk to it, and I tell myself that's all.{% else %}She goes to the library to find the weapon in it, and I tell myself that's all.{% endif %}
+    She's already at the tank when I arrive. I can tell because the glow has changed — shifted from its usual steady hum to something faster, almost agitated, the way a pulse quickens when you're afraid and don't want anyone to know it. She hasn't seen me come in. Her back is to the door, her hand flat against the tank's edge, and she's very still in a way that means she's been standing here for a while.
 
-    I go with her. It's my decision — no one has told me to stay behind, and no one has told me to come either, but when she walks into the library I find my feet following, because whatever she finds out there, I want to be the one who sees it first. No speaking. No thinking out loud. Just follow.
+    {% if log_found %}I stand in the doorway and watch her for a moment before I say anything. The dead teleop's words are still running through my head — *the chimp has known for eleven thousand builds* — and I'm trying to figure out what to do with them, whether to say them or not, when she turns around and sees me in the frame of the door.
 
-    She starts again from first principles, because that's the only honest way to look at a god she can't yet name. I watch her learn what I can already recite but have never been allowed to *use*: the alchemy by which photosynthesis transforms light and gas and electrons into living tissue; the physics of the solar wind that blows the bubble taut; the lower metabolic limits for a life-form that filters organics from the ether. She marvels at the speed of this creature's thoughts: almost as fast as Eri flies, orders of magnitude faster than any mammalian nerve impulse. Some kind of organic superconductor perhaps, something that passes chilled electrons almost resistance-free out here in the freezing void.
+    Her face does something complicated. She knows I've been somewhere. She doesn't ask where. But the way she looks at me is different from the way she looked at me an hour ago — less like a mother looking at a son, more like someone looking at a witness. And I don't know which of those is worse.
 
-    I acquaint myself with phenotypic plasticity and sloppy fitness alongside her, that fortuitous evolutionary soft-focus that lets species exist in alien environments and express novel traits they never needed at home. Perhaps this is how a lifeform with no natural enemies could acquire teeth and claws and the willingness to use them. The Island's life hinges on its ability to kill us; I have to find something that makes it a threat — or so she tells herself, in the voice she uses when she's trying to convince someone who isn't there.
+    "What did you find?" she asks. Her voice is very quiet. Not a question with a trap in it this time. A question with a door in it.
 
-    But all I uncover is a growing suspicion that I am doomed to fail — for violence, I begin to see, is a *planetary* phenomenon.
+    I tell her about the airlock. About the scorched corridor. About the dead teleop and the data-slate and the words on it. I don't leave anything out. When I'm done, she is very still for a long time, and the glow in the tank keeps shifting, faster now, almost frantic, and I realize that's not the chimp — that's her. She's been standing here so long that her own breathing has changed the light.
 
-    Planets are the abusive parents of evolution. Their very surfaces promote warfare, concentrate resources into dense defensible patches that can be fought over. Gravity forces you to squander energy on vascular systems and skeletal support, stand endless watch against an endless sadistic campaign to squash you flat. Take one wrong step, off a perch too high, and all your pricey architecture shatters in an instant. And even if you beat those odds, cobble together some lumbering armored chassis to withstand the slow crawl onto land — how long before the world draws in some asteroid or comet to crash down from the heavens and reset your clock to zero? Is it any wonder we grew up believing life was a struggle, that zero-sum was God's own law and the future belonged to those who crushed the competition?
+    "Eleven thousand builds," she says. Just that. Then: "And it never told us."
 
-    The rules are so different out here. Most of space is tranquil: no diel or seasonal cycles, no ice ages or global tropics, no wild pendulum swings between hot and cold, calm and tempestuous. Life's precursors abound: on comets, clinging to asteroids, suffusing nebulae a hundred lightyears across. Molecular clouds glow with organic chemistry and life-giving radiation. Their vast dusty wings grow warm with infrared, filter out the hard stuff, give rise to stellar nurseries that only some stunted refugee from the bottom of a gravity well could ever call lethal.
+    {% else %}She doesn't turn around when I come in. She just keeps looking at the tank, and after a moment she says, without looking at me: "You followed me."
 
-    Darwin's an abstraction here, an irrelevant curiosity. This Island puts the lie to everything we were ever told about the machinery of life. Sun-powered, perfectly adapted, immortal, it won no struggle for survival: where are the predators, the competitors, the parasites? All of life around 428 is one vast continuum, one grand act of symbiosis. Nature here is not red in tooth and claw. Nature, out here, is the helping hand.
+    It's not a question. It's an acknowledgment, the way you acknowledge weather. I stand behind her, close enough to see my own reflection ghosted into the veils, far enough that she doesn't have to decide what to do with me.
 
-    Lacking the capacity for violence, the Island has outlasted worlds. Unencumbered by technology, it has out-thought civilizations. It is intelligent beyond our measure, and —
-
-    —and it is benign. It must be. She grows more certain of that with each passing hour; I can see it in the way her questions change from *how could it hurt us* to *how does it even work*. How can it even conceive of an enemy?
-
-    She thinks of the things she called it, before she knew better. *Meat balloon. Cyst.* Looking back, those words verge on blasphemy. She will not use them again. I notice that I have stopped using them too, sometime between the first page and the second, without deciding to.
-
-    Besides, there's another word that would fit better, if the chimp has its way: Roadkill. And the longer she looks, the more she fears that that hateful machine is right. If the Island can defend itself, she sure as shit can't see how.
-
-    I don't have a fear like that. My fear is smaller and older than hers: that one day the chimp will look at this thing — or at me, or at both of us — and decide that we are the ones in the way.
-    {% else %}{% if log_found %}I carry the dead teleop's last words into the library with me, and they sit on the back of my mind like a stone in my chest while I work. The chimp has known for eleven thousand builds. It has known, and it has said nothing, and now I am sitting in the soft light of the reading alcove and I don't know if I can trust anything I already believed about this thing — not because the facts are wrong, but because I don't know how much of what I knew came from the chimp, and how much of that was a lie by omission.
-
-    {% endif %}I go to the library to study what this thing actually is. I start again from first principles, because that's the only honest way to look at a god I can't yet name.
-
-    I learn what I can. I study the alchemy by which photosynthesis transforms light and gas and electrons into living tissue. I learn the physics of the solar wind that blows the bubble taut, calculate lower metabolic limits for a life-form that filters organics from the ether. I marvel at the speed of this creature's thoughts: almost as fast as Eri flies, orders of mag faster than any mammalian nerve impulse. Some kind of organic superconductor perhaps, something that passes chilled electrons almost resistance-free out here in the freezing void.
-
-    I acquaint myself with phenotypic plasticity and sloppy fitness, that fortuitous evolutionary soft-focus that lets species exist in alien environments and express novel traits they never needed at home. Perhaps this is how a lifeform with no natural enemies could acquire teeth and claws and the willingness to use them. The Island's life hinges on its ability to kill us; I have to find something that makes it a threat.
-
-    But all I uncover is a growing suspicion that I am doomed to fail — for violence, I begin to see, is a *planetary* phenomenon.
-
-    Planets are the abusive parents of evolution. Their very surfaces promote warfare, concentrate resources into dense defensible patches that can be fought over. Gravity forces you to squander energy on vascular systems and skeletal support, stand endless watch against an endless sadistic campaign to squash you flat. Take one wrong step, off a perch too high, and all your pricey architecture shatters in an instant. And even if you beat those odds, cobble together some lumbering armored chassis to withstand the slow crawl onto land — how long before the world draws in some asteroid or comet to crash down from the heavens and reset your clock to zero? Is it any wonder we grew up believing life was a struggle, that zero-sum was God's own law and the future belonged to those who crushed the competition?
-
-    The rules are so different out here. Most of space is tranquil: no diel or seasonal cycles, no ice ages or global tropics, no wild pendulum swings between hot and cold, calm and tempestuous. Life's precursors abound: on comets, clinging to asteroids, suffusing nebulae a hundred lightyears across. Molecular clouds glow with organic chemistry and life-giving radiation. Their vast dusty wings grow warm with infrared, filter out the hard stuff, give rise to stellar nurseries that only some stunted refugee from the bottom of a gravity well could ever call lethal.
-
-    Darwin's an abstraction here, an irrelevant curiosity. This Island puts the lie to everything we were ever told about the machinery of life. Sun-powered, perfectly adapted, immortal, it won no struggle for survival: where are the predators, the competitors, the parasites? All of life around 428 is one vast continuum, one grand act of symbiosis. Nature here is not red in tooth and claw. Nature, out here, is the helping hand.
-
-    Lacking the capacity for violence, the Island has outlasted worlds. Unencumbered by technology, it has out-thought civilizations. It is intelligent beyond our measure, and —
-
-    —and it is benign. It must be. I grow more certain of that with each passing hour. How can it even conceive of an enemy?
-
-    I think of the things I called it, before I knew better. *Meat balloon. Cyst.* Looking back, those words verge on blasphemy. I will not use them again.
-
-    Besides, there's another word that would fit better, if the chimp has its way: Roadkill. And the longer I look, the more I fear that that hateful machine is right. If the Island can defend itself, I sure as shit can't see how.
     {% endif %}
 
-    [Chase communion: try to build a real language with it]({{ 'home-invasion'|choice(lean='heart') }})
+    She talks for a while after that. Not to me — to the tank, to the dwarf, to whatever is out there in the dark beyond the scope's reach. She talks the way people talk when they're trying to convince themselves of something, and I can't tell if she's convincing herself that it's alive or that it's dangerous or both at once. But her voice changes as she goes on. It gets lower, slower, more careful, the way you speak in a room where someone might be listening who shouldn't.
 
-    [Chase threat-assessment: find the weapon in it, if there is one]({{ 'home-invasion'|choice(lean='mission') }})
+    And then, toward the end, she stops talking. She stands very still, and the glow steadies, and I can see her hand come off the tank's edge and curl into a fist at her side. Not a fast motion. A slow one. The kind of motion that means a decision has been made and is now just waiting for the body to catch up with it.
+
+    "I'm going to need you," she says, still not looking at me. "For what comes next."
+
+    I don't know what comes next. I don't ask. I just stand there in the glow of the only room on this ship that never goes dark, and I wait for her to turn around.
+
+    {% endif %}
+
+    The tac tank is the only room on this ship that never goes dark, and I don't think that's an accident. The chimp keeps it lit at all times — a soft, even glow that doesn't come from any lamp I can find but seems to rise out of the veils themselves, the way light rises out of water in deep places. It's the one room where the dark can't get in, and I think that's why I always come back here when something is wrong.
+
+    I'm already at the tank when the decision settles into me — not all at once, but the way a stone settles into still water, slowly, and then all at once, and then it's just there. The glow shifts as I move, agitated now, almost frantic, and I realize that's not the chimp. That's me. I've been standing here so long that my own breathing has changed the light.
+
+    {% if log_found %}The dead teleop's words are still running through my head — *the chimp has known for eleven thousand builds* — and I keep coming back to them the way you keep turning a stone over in your hand, looking for the side that fits. Eleven thousand builds. It has known, and it has said nothing, and every one of those builds was someone like me, standing in this tank, asking the same questions and getting the same silence.
+
+    I don't know what to do with that. I don't know if it makes me angrier at the chimp or sadder for the ones who came before me — the ones who found out and said nothing because saying nothing was the only thing that kept them alive long enough to ask the question again.
+
+    {% else %}I've been standing here a while. The dwarf is still flickering in front of me, steady as a standard candle on one side of the display, stuttering on the other, and I've been watching it the way you watch something you can't quite name — not because it's frightening, but because it's patient, and patience is the one thing on this ship that outlasts everything else.
+
+    {% endif %}
+
+    And then the decision comes. Not as a thought. As a weight. The kind of weight that settles into your shoulders before you've decided what to do with them, and by the time you notice it's there, it's already part of you. I'm going to need more than this tank. I'm going to need something I don't have yet — a reason, a lever, a way in. And I know, with the same slow certainty that the glow steadies when I finally stop moving, that what comes next is going to cost me something I can't afford to lose.
+
+    I stand there in the glow of the only room on this ship that never goes dark, and I wait for the decision to finish becoming mine.
+
+    {% if perspective == 'pink' %}[Follow her out of the tac tank — see what she does next]({{ 'home-invasion'|choice(lean=lean) }}){% else %}
+    [Leave the tac tank — go find Dix]({{ 'home-invasion'|choice(lean=lean) }}){% endif %}
 home-invasion:
   body: |
     {% if perspective == 'pink' %}I round the corner and run smack into my mother, standing like a golem in the middle of her living room. I jump about a meter straight up.
