@@ -32,12 +32,12 @@ entrypoint:
 
     *   *   *
 
-    And so another build begins. My name is Sunday Ahzmundin, and the next thing I know is a face I've never seen before, holding mine.
+    And so another build begins. The next thing I know is a face I've never seen before, looking at mine.
     {% endif %}
 
-    [I am purple — tell it from my side]({{ 'wake'|choice(perspective='void', dix_burned=0, deal=0, lean='void') }})
+    [tell it like before]({{ 'wake'|choice(perspective='void', dix_burned=0, deal=0, lean='void') }})
 
-    [I am pink — tell it from his side]({{ 'wake'|choice(perspective='pink', dix_burned=0, deal=0, lean='void') }})
+    [tell it differently]({{ 'wake'|choice(perspective='pink', dix_burned=0, deal=0, lean='void') }})
 wake:
   body: |
     {% if perspective == 'pink' %}She wakes first. I know this because the chimp tells me to be ready, and then it tells her that I'm here, and then she is sitting up in her coffin with her eyes open and looking at me like I am something that fell out of the sky.
